@@ -25,7 +25,7 @@
 !      
       implicit none 
 ! 
-!     Dependences: a simple RNG to generate data for the extra test
+!     Dependences: a simple RNG to generate data for extra tests
 !
       real(8) :: auxifun_uniran
 !
@@ -150,7 +150,6 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
 !
 !
 !     Again,
@@ -208,7 +207,6 @@
          endif 
       endif 
 
-
 !  
 !     Derivative of ML function:
 !
@@ -260,9 +258,6 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
-
-
 !
 !
 !     Again,
@@ -317,24 +312,12 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
-
-
-
-
-
-
-
-
-
-
-
+!
 !
 !
 !
       write(*,302) &
       'For EXTRA-TESTS, treating input as 2D and 3D, read fort.13'
-
 
       write(13,302) &
          'Suppose that you now are convinced be the latter performance.'
@@ -343,14 +326,12 @@
       write(13,302) &
          'for input given randomly as 0D, 1D, 2D and 3D.'
 
-
       nd1 = 3
       nd2 = 7
       nd3 = 9 
 
       allocate ( z2d(nd1,nd2), e2d(nd1,nd2) ) 
       allocate ( z3d(nd1,nd2,nd3), e3d(nd1,nd2,nd3) ) 
-
 
       do j=1,nd2
       do i=1,nd1
@@ -372,7 +353,10 @@
       
 
       write(13,304) '2D: Col1 = z(i,j)', 'Col2 = | e(i,j) - "Eexact" |'
-
+!
+!
+!     Here are the syntax to perform calculations with 2D and 3D input z*d:
+!
       e2d = mlf_garrappa ( afa, bta, z2d )  
       e3d = mlf_garrappa ( afa, bta, z3d )  
 
@@ -399,10 +383,6 @@
          write(13,*)
       enddo
       enddo
-
-
-
-
 
 !
 !
