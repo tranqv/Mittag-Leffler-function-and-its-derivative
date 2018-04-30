@@ -31,6 +31,4 @@ where cas=c01 is to select the test case c01, and eep=6 is to perform with error
 
 --------------------------------
 
-Report or even complaints about this Fortran code should be sent to tranquocviet@tdt.edu.vn, viet204@gmail.com, or viet@snu.ac.kr. If it will be on a good day then you may get a great support from me :D 
-
-Cheers.
+Reports or even complaints about this Fortran code are welcomed.
