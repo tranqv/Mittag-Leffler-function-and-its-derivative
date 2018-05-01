@@ -34,7 +34,7 @@ Running: with test case 01 (ref. file data: tcases/tt_mlfm_c01.txt),
 
 where cas=c01 is to select the test case c01, and eep=6 is to perform with error estimate about 10^(-6). 
 
-Details of the reference file data can be read at the README file inside the folder tcase (extract tcases.zip).
+Details of the reference data files can be read at README.txt inside the folder tcase (extract tcases.zip).
 
 --------------------------------
 
