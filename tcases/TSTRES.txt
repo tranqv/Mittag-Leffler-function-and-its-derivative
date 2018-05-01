@@ -1,0 +1,2328 @@
+************************************************************************
+CASE c01, data file tcases/tt_mlfm_c01.txt
+ eep  =          15
+ cas  =c01
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        0.0000000000000000     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    7.8000000000000000E-002
+-->> absolute error E = 8.605E-14     relative error E = 1.141E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    7.0000000000000007E-002
+-->> absolute error E = 8.605E-14     relative error E = 1.141E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12800000000000000     
+-->> absolute error E = 4.766E-09     relative error E = 4.091E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12600000000000000     
+-->> absolute error E = 4.766E-09     relative error E = 4.091E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c02, data file tcases/tt_mlfm_c02.txt
+ eep  =          15
+ cas  =c02
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.3000000000000000        0.0000000000000000     
+ afa  =  0.84999999999999998     
+ bta  =   1.3000000000000000     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    7.5999999999999998E-002
+-->> absolute error E = 4.891E-14     relative error E = 1.118E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    7.0999999999999994E-002
+-->> absolute error E = 4.891E-14     relative error E = 1.118E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12900000000000000     
+-->> absolute error E = 2.277E-09     relative error E = 3.544E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.13200000000000001     
+-->> absolute error E = 2.277E-09     relative error E = 3.544E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c03, data file tcases/tt_mlfm_c03.txt
+ eep  =          15
+ cas  =c03
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998       0.80000000000000004        0.0000000000000000     
+ afa  =  0.84999999999999998     
+ bta  =  0.80000000000000004     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    7.6999999999999999E-002
+-->> absolute error E = 1.297E-13     relative error E = 1.196E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.9000000000000006E-002
+-->> absolute error E = 1.297E-13     relative error E = 1.196E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12800000000000000     
+-->> absolute error E = 9.569E-10     relative error E = 5.527E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12800000000000000     
+-->> absolute error E = 9.569E-10     relative error E = 5.527E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+Not found file: tcases/tt_mlfm_c04.txt
+
+************************************************************************
+CASE c05, data file tcases/tt_mlfm_c05.txt
+ eep  =          15
+ cas  =c05
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        1.1780972450961700     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   1.1780972450961700     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.9000000000000005E-002
+-->> absolute error E = 5.064E-14     relative error E = 3.800E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.7000000000000003E-002
+-->> absolute error E = 5.064E-14     relative error E = 3.800E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17999999999999999     
+-->> absolute error E = 2.138E-09     relative error E = 4.214E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18200000000000000     
+-->> absolute error E = 2.138E-09     relative error E = 4.214E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c06, data file tcases/tt_mlfm_c06.txt
+ eep  =          15
+ cas  =c06
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        1.7671458676442600     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   1.7671458676442600     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.11000000000000000     
+-->> absolute error E = 8.561E-17     relative error E = 5.687E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.10500000000000000     
+-->> absolute error E = 8.561E-17     relative error E = 5.687E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.20399999999999999     
+-->> absolute error E = 1.954E-09     relative error E = 1.218E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.20200000000000001     
+-->> absolute error E = 1.954E-09     relative error E = 1.218E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c07, data file tcases/tt_mlfm_c07.txt
+ eep  =          15
+ cas  =c07
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        3.1415926535897900     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   3.1415926535897900     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.7000000000000004E-002
+-->> absolute error E = 5.610E-17     relative error E = 5.125E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.2000000000000000E-002
+-->> absolute error E = 5.610E-17     relative error E = 5.125E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12000000000000000     
+-->> absolute error E = 1.760E-09     relative error E = 1.770E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.11799999999999999     
+-->> absolute error E = 1.760E-09     relative error E = 1.770E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+Not found file: tcases/tt_mlfm_c08.txt
+
+************************************************************************
+CASE c09, data file tcases/tt_mlfm_c09.txt
+ eep  =          15
+ cas  =c09
+ eps  =   1.0000000000000001E-015
+ #        1001   1.2500000000000000        1.0000000000000000        1.9634954084936200     
+ afa  =   1.2500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   1.9634954084936200     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.11400000000000000     
+-->> absolute error E = 2.336E-15     relative error E = 2.920E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.10800000000000000     
+-->> absolute error E = 2.336E-15     relative error E = 2.920E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.20799999999999999     
+-->> absolute error E = 1.876E-09     relative error E = 4.969E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.23599999999999999     
+-->> absolute error E = 1.876E-09     relative error E = 4.969E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c11, data file tcases/tt_mlfm_c11.txt
+ eep  =          15
+ cas  =c11
+ eps  =   1.0000000000000001E-015
+ #        1001   1.2500000000000000        1.0000000000000000        3.1415926535897900     
+ afa  =   1.2500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   3.1415926535897900     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.16200000000000001     
+-->> absolute error E = 5.146E-17     relative error E = 6.679E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.15300000000000000     
+-->> absolute error E = 5.146E-17     relative error E = 6.679E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.30800000000000000     
+-->> absolute error E = 9.901E-10     relative error E = 1.308E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.30499999999999999     
+-->> absolute error E = 9.901E-10     relative error E = 1.308E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c12, data file tcases/tt_mlfm_c12.txt
+ eep  =          15
+ cas  =c12
+ eps  =   1.0000000000000001E-015
+ #        1001  0.69999999999999996       0.69999999999999996        0.0000000000000000     
+ afa  =  0.69999999999999996     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.7000000000000004E-002
+-->> absolute error E = 2.590E-12     relative error E = 1.126E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.0999999999999999E-002
+-->> absolute error E = 2.590E-12     relative error E = 1.126E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.204E-10     relative error E = 1.075E-13
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12100000000000000     
+-->> absolute error E = 7.204E-10     relative error E = 1.075E-13
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c13, data file tcases/tt_mlfm_c13.txt
+ eep  =          15
+ cas  =c13
+ eps  =   1.0000000000000001E-015
+ #        1001  0.80000000000000004       0.80000000000000004        0.0000000000000000     
+ afa  =  0.80000000000000004     
+ bta  =  0.80000000000000004     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.5000000000000002E-002
+-->> absolute error E = 4.484E-14     relative error E = 3.158E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.4000000000000001E-002
+-->> absolute error E = 4.484E-14     relative error E = 3.158E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12200000000000000     
+-->> absolute error E = 3.262E-09     relative error E = 1.207E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12200000000000000     
+-->> absolute error E = 3.262E-09     relative error E = 1.207E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c14, data file tcases/tt_mlfm_c14.txt
+ eep  =          15
+ cas  =c14
+ eps  =   1.0000000000000001E-015
+ #        1001  0.90000000000000002       0.90000000000000002        0.0000000000000000     
+ afa  =  0.90000000000000002     
+ bta  =  0.90000000000000002     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.7000000000000004E-002
+-->> absolute error E = 1.688E-14     relative error E = 6.617E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.0999999999999999E-002
+-->> absolute error E = 1.688E-14     relative error E = 6.617E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.479E-10     relative error E = 2.182E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.13200000000000001     
+-->> absolute error E = 7.479E-10     relative error E = 2.182E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c15, data file tcases/tt_mlfm_c15.txt
+ eep  =          15
+ cas  =c15
+ eps  =   1.0000000000000001E-015
+ #        1001  0.98999999999999999       0.98999999999999999        0.0000000000000000     
+ afa  =  0.98999999999999999     
+ bta  =  0.98999999999999999     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    7.0000000000000007E-002
+-->> absolute error E = 3.912E-15     relative error E = 4.389E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.2000000000000000E-002
+-->> absolute error E = 3.912E-15     relative error E = 4.389E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.13600000000000001     
+-->> absolute error E = 3.802E-10     relative error E = 4.149E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12100000000000000     
+-->> absolute error E = 3.802E-10     relative error E = 4.149E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c16, data file tcases/tt_mlfm_c16.txt
+ eep  =          15
+ cas  =c16
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        0.0000000000000000     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.12700000000000000     
+-->> absolute error E = 3.529E-14     relative error E = 1.030E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.12000000000000000     
+-->> absolute error E = 3.529E-14     relative error E = 1.030E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.24600000000000000     
+-->> absolute error E = 1.473E-09     relative error E = 8.801E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.23599999999999999     
+-->> absolute error E = 1.473E-09     relative error E = 8.801E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c17, data file tcases/tt_mlfm_c17.txt
+ eep  =          15
+ cas  =c17
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        0.0000000000000000     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.12600000000000000     
+-->> absolute error E = 1.022E-14     relative error E = 1.604E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.12200000000000000     
+-->> absolute error E = 1.022E-14     relative error E = 1.604E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.23999999999999999     
+-->> absolute error E = 1.698E-09     relative error E = 6.941E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.29899999999999999     
+-->> absolute error E = 1.698E-09     relative error E = 6.941E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c18, data file tcases/tt_mlfm_c18.txt
+ eep  =          15
+ cas  =c18
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        0.0000000000000000     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.25900000000000001     
+-->> absolute error E = 2.885E-15     relative error E = 4.083E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.25500000000000000     
+-->> absolute error E = 2.885E-15     relative error E = 4.083E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.50900000000000001     
+-->> absolute error E = 2.031E-11     relative error E = 2.403E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.50500000000000000     
+-->> absolute error E = 2.031E-11     relative error E = 2.403E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c19, data file tcases/tt_mlfm_c19.txt
+ eep  =          15
+ cas  =c19
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        0.0000000000000000     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.28399999999999997     
+-->> absolute error E = 1.705E-15     relative error E = 4.431E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.26500000000000001     
+-->> absolute error E = 1.705E-15     relative error E = 4.431E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.52600000000000002     
+-->> absolute error E = 3.785E-11     relative error E = 9.643E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.52300000000000002     
+-->> absolute error E = 3.785E-11     relative error E = 9.643E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c20, data file tcases/tt_mlfm_c20.txt
+ eep  =          15
+ cas  =c20
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        0.0000000000000000     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   0.0000000000000000     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.27800000000000002     
+-->> absolute error E = 1.705E-15     relative error E = 4.431E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.30700000000000000     
+-->> absolute error E = 1.705E-15     relative error E = 4.431E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.53100000000000003     
+-->> absolute error E = 3.785E-11     relative error E = 9.643E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.52700000000000002     
+-->> absolute error E = 3.785E-11     relative error E = 9.643E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c21, data file tcases/tt_mlfm_c21.txt
+ eep  =          15
+ cas  =c21
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        1.0210176124166801     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   1.0210176124166801     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.11200000000000000     
+-->> absolute error E = 2.143E-04     relative error E = 1.448E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.5000000000000001E-002
+-->> absolute error E = 2.143E-04     relative error E = 1.448E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18600000000000000     
+-->> absolute error E = 5.868E-05     relative error E = 1.473E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18500000000000000     
+-->> absolute error E = 5.868E-05     relative error E = 1.473E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c22, data file tcases/tt_mlfm_c22.txt
+ eep  =          15
+ cas  =c22
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        1.8064157758141299     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   1.8064157758141299     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.17599999999999999     
+-->> absolute error E = 9.437E-14     relative error E = 1.477E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.17199999999999999     
+-->> absolute error E = 9.437E-14     relative error E = 1.477E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.34000000000000002     
+-->> absolute error E = 1.145E-09     relative error E = 4.732E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.39700000000000002     
+-->> absolute error E = 1.145E-09     relative error E = 4.732E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c23, data file tcases/tt_mlfm_c23.txt
+ eep  =          15
+ cas  =c23
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        2.5918139392115802     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   2.5918139392115802     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.38100000000000001     
+-->> absolute error E = 2.648E-15     relative error E = 4.123E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.37000000000000000     
+-->> absolute error E = 2.648E-15     relative error E = 4.123E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.73999999999999999     
+-->> absolute error E = 1.495E-11     relative error E = 1.290E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.73399999999999999     
+-->> absolute error E = 1.495E-11     relative error E = 1.290E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c24, data file tcases/tt_mlfm_c24.txt
+ eep  =          15
+ cas  =c24
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        3.3772121026090298     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   3.3772121026090298     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.30399999999999999     
+-->> absolute error E = 1.029E-15     relative error E = 5.880E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.29999999999999999     
+-->> absolute error E = 1.029E-15     relative error E = 5.880E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.58699999999999997     
+-->> absolute error E = 3.048E-11     relative error E = 7.541E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.58099999999999996     
+-->> absolute error E = 3.048E-11     relative error E = 7.541E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c25, data file tcases/tt_mlfm_c25.txt
+ eep  =          15
+ cas  =c25
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        4.1626102660064799     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   4.1626102660064799     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.73299999999999998     
+-->> absolute error E = 5.452E-16     relative error E = 7.796E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.72599999999999998     
+-->> absolute error E = 5.452E-16     relative error E = 7.796E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:    1.4390000000000001     
+-->> absolute error E = 9.840E-15     relative error E = 1.182E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:    1.4990000000000001     
+-->> absolute error E = 9.840E-15     relative error E = 1.182E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c26, data file tcases/tt_mlfm_c26.txt
+ eep  =          15
+ cas  =c26
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        2.0420352248333700     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   2.0420352248333700     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10299999999999999     
+-->> absolute error E = 1.592E-14     relative error E = 8.645E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.10100000000000001     
+-->> absolute error E = 1.592E-14     relative error E = 8.645E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19600000000000001     
+-->> absolute error E = 7.006E-10     relative error E = 1.175E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19400000000000001     
+-->> absolute error E = 7.006E-10     relative error E = 1.175E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c27, data file tcases/tt_mlfm_c27.txt
+ eep  =          15
+ cas  =c27
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        3.6128315516282599     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   3.6128315516282599     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.14499999999999999     
+-->> absolute error E = 1.188E-14     relative error E = 1.451E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.15100000000000000     
+-->> absolute error E = 1.188E-14     relative error E = 1.451E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.27500000000000002     
+-->> absolute error E = 1.143E-09     relative error E = 3.352E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.27400000000000002     
+-->> absolute error E = 1.143E-09     relative error E = 3.352E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c28, data file tcases/tt_mlfm_c28.txt
+ eep  =          15
+ cas  =c28
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        5.1836278784231604     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   5.1836278784231604     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.29899999999999999     
+-->> absolute error E = 4.945E-15     relative error E = 4.231E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.27200000000000002     
+-->> absolute error E = 4.945E-15     relative error E = 4.231E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.53000000000000003     
+-->> absolute error E = 1.495E-11     relative error E = 6.875E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.55100000000000005     
+-->> absolute error E = 1.495E-11     relative error E = 6.875E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c29, data file tcases/tt_mlfm_c29.txt
+ eep  =          15
+ cas  =c29
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        6.7544242052180596     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   6.7544242052180596     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.41499999999999998     
+-->> absolute error E = 2.234E-15     relative error E = 7.239E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.41099999999999998     
+-->> absolute error E = 2.234E-15     relative error E = 7.239E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.81599999999999995     
+-->> absolute error E = 3.048E-11     relative error E = 7.115E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.82699999999999996     
+-->> absolute error E = 3.048E-11     relative error E = 7.115E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c30, data file tcases/tt_mlfm_c30.txt
+ eep  =          15
+ cas  =c30
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        8.3252205320129509     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   8.3252205320129509     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.72499999999999998     
+-->> absolute error E = 5.091E-16     relative error E = 6.974E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.70899999999999996     
+-->> absolute error E = 5.091E-16     relative error E = 6.974E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:    1.3750000000000000     
+-->> absolute error E = 9.840E-15     relative error E = 1.182E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:    1.3700000000000001     
+-->> absolute error E = 9.840E-15     relative error E = 1.182E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c31, data file tcases/tt_mlfm_c31.txt
+ eep  =          15
+ cas  =c31
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        3.0630528372500501     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   3.0630528372500501     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.17100000000000001     
+-->> absolute error E = 6.471E-17     relative error E = 9.116E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.16100000000000000     
+-->> absolute error E = 6.471E-17     relative error E = 9.116E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.32600000000000001     
+-->> absolute error E = 6.874E-10     relative error E = 8.426E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.37600000000000000     
+-->> absolute error E = 6.874E-10     relative error E = 8.426E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c32, data file tcases/tt_mlfm_c32.txt
+ eep  =          15
+ cas  =c32
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        5.4192473274423900     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   5.4192473274423900     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.34499999999999997     
+-->> absolute error E = 5.138E-13     relative error E = 1.729E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.33600000000000002     
+-->> absolute error E = 5.138E-13     relative error E = 1.729E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.71599999999999997     
+-->> absolute error E = 1.148E-09     relative error E = 1.045E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.67100000000000004     
+-->> absolute error E = 1.148E-09     relative error E = 1.045E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c33, data file tcases/tt_mlfm_c33.txt
+ eep  =          15
+ cas  =c33
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        7.7754418176347402     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   7.7754418176347402     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.30900000000000000     
+-->> absolute error E = 4.155E-15     relative error E = 4.089E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.30199999999999999     
+-->> absolute error E = 4.155E-15     relative error E = 4.089E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.60399999999999998     
+-->> absolute error E = 1.495E-11     relative error E = 7.888E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.60399999999999998     
+-->> absolute error E = 1.495E-11     relative error E = 7.888E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c34, data file tcases/tt_mlfm_c34.txt
+ eep  =          15
+ cas  =c34
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        10.131636307827099     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   10.131636307827099     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.34999999999999998     
+-->> absolute error E = 1.261E-15     relative error E = 6.509E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.33400000000000002     
+-->> absolute error E = 1.261E-15     relative error E = 6.509E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.65500000000000003     
+-->> absolute error E = 3.048E-11     relative error E = 7.489E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.65300000000000002     
+-->> absolute error E = 3.048E-11     relative error E = 7.489E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c35, data file tcases/tt_mlfm_c35.txt
+ eep  =          15
+ cas  =c35
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        12.487830798019401     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   12.487830798019401     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.38800000000000001     
+-->> absolute error E = 5.956E-16     relative error E = 4.918E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.37800000000000000     
+-->> absolute error E = 5.956E-16     relative error E = 4.918E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.75200000000000000     
+-->> absolute error E = 9.839E-15     relative error E = 1.179E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.75500000000000000     
+-->> absolute error E = 9.839E-15     relative error E = 1.179E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c36, data file tcases/tt_mlfm_c36.txt
+ eep  =          15
+ cas  =c36
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        7.1471232869167798     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   7.1471232869167798     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10100000000000001     
+-->> absolute error E = 2.858E-03     relative error E = 1.278E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 2.858E-03     relative error E = 1.278E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19200000000000000     
+-->> absolute error E = 7.851E-04     relative error E = 1.305E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18600000000000000     
+-->> absolute error E = 7.851E-04     relative error E = 1.305E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c37, data file tcases/tt_mlfm_c37.txt
+ eep  =          15
+ cas  =c37
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        12.644910430698900     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   12.644910430698900     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.31400000000000000     
+-->> absolute error E = 7.245E-13     relative error E = 1.507E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.30800000000000000     
+-->> absolute error E = 7.245E-13     relative error E = 1.507E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.67100000000000004     
+-->> absolute error E = 1.149E-09     relative error E = 6.497E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.60899999999999999     
+-->> absolute error E = 1.149E-09     relative error E = 6.497E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c38, data file tcases/tt_mlfm_c38.txt
+ eep  =          15
+ cas  =c38
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        18.142697574481101     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   18.142697574481101     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.25300000000000000     
+-->> absolute error E = 5.701E-15     relative error E = 4.399E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.24500000000000000     
+-->> absolute error E = 5.701E-15     relative error E = 4.399E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.48499999999999999     
+-->> absolute error E = 1.495E-11     relative error E = 6.227E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.47599999999999998     
+-->> absolute error E = 1.495E-11     relative error E = 6.227E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c39, data file tcases/tt_mlfm_c39.txt
+ eep  =          15
+ cas  =c39
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        23.640484718263199     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   23.640484718263199     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.46200000000000002     
+-->> absolute error E = 1.248E-15     relative error E = 4.861E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.45100000000000001     
+-->> absolute error E = 1.248E-15     relative error E = 4.861E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.89000000000000001     
+-->> absolute error E = 3.048E-11     relative error E = 7.293E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.89500000000000002     
+-->> absolute error E = 3.048E-11     relative error E = 7.293E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c40, data file tcases/tt_mlfm_c40.txt
+ eep  =          15
+ cas  =c40
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        29.138271862045301     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   29.138271862045301     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.43200000000000000     
+-->> absolute error E = 7.383E-15     relative error E = 1.156E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.42599999999999999     
+-->> absolute error E = 7.383E-15     relative error E = 1.156E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.85199999999999998     
+-->> absolute error E = 9.991E-15     relative error E = 1.200E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.87600000000000000     
+-->> absolute error E = 9.991E-15     relative error E = 1.200E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c41, data file tcases/tt_mlfm_c41.txt
+ eep  =          15
+ cas  =c41
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        6.1261056745001001     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   6.1261056745001001     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.11899999999999999     
+-->> absolute error E = 3.303E+00     relative error E = 1.361E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.9000000000000005E-002
+-->> absolute error E = 3.303E+00     relative error E = 1.361E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19900000000000001     
+-->> absolute error E = 9.061E-01     relative error E = 1.387E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19600000000000001     
+-->> absolute error E = 9.061E-01     relative error E = 1.387E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c42, data file tcases/tt_mlfm_c42.txt
+ eep  =          15
+ cas  =c42
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        10.838494654884800     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   10.838494654884800     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.18400000000000000     
+-->> absolute error E = 1.348E-13     relative error E = 1.794E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.17999999999999999     
+-->> absolute error E = 1.348E-13     relative error E = 1.794E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.35599999999999998     
+-->> absolute error E = 1.145E-09     relative error E = 4.039E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.34899999999999998     
+-->> absolute error E = 1.145E-09     relative error E = 4.039E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c43, data file tcases/tt_mlfm_c43.txt
+ eep  =          15
+ cas  =c43
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        15.550883635269500     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   15.550883635269500     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.34300000000000003     
+-->> absolute error E = 2.291E-15     relative error E = 3.908E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.33700000000000002     
+-->> absolute error E = 2.291E-15     relative error E = 3.908E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.68700000000000006     
+-->> absolute error E = 1.495E-11     relative error E = 1.439E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.62600000000000000     
+-->> absolute error E = 1.495E-11     relative error E = 1.439E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c44, data file tcases/tt_mlfm_c44.txt
+ eep  =          15
+ cas  =c44
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        20.263272615654198     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   20.263272615654198     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.49600000000000000     
+-->> absolute error E = 1.147E-15     relative error E = 4.375E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.48999999999999999     
+-->> absolute error E = 1.147E-15     relative error E = 4.375E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:    1.0040000000000000     
+-->> absolute error E = 3.048E-11     relative error E = 7.275E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.95899999999999996     
+-->> absolute error E = 3.048E-11     relative error E = 7.275E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c45, data file tcases/tt_mlfm_c45.txt
+ eep  =          15
+ cas  =c45
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        24.975661596038901     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   24.975661596038901     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.40500000000000003     
+-->> absolute error E = 5.588E-16     relative error E = 4.624E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.40300000000000002     
+-->> absolute error E = 5.588E-16     relative error E = 4.624E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.77100000000000002     
+-->> absolute error E = 9.839E-15     relative error E = 1.179E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.78300000000000003     
+-->> absolute error E = 9.839E-15     relative error E = 1.179E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c46, data file tcases/tt_mlfm_c46.txt
+ eep  =          15
+ cas  =c46
+ eps  =   1.0000000000000001E-015
+ #        1001   1.3000000000000000       0.69999999999999996        5.1050880620834098     
+ afa  =   1.3000000000000000     
+ bta  =  0.69999999999999996     
+ argz =   5.1050880620834098     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10500000000000000     
+-->> absolute error E = 9.104E-06     relative error E = 1.308E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.7000000000000003E-002
+-->> absolute error E = 9.104E-06     relative error E = 1.308E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19400000000000001     
+-->> absolute error E = 2.504E-06     relative error E = 1.337E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18700000000000000     
+-->> absolute error E = 2.504E-06     relative error E = 1.337E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c47, data file tcases/tt_mlfm_c47.txt
+ eep  =          15
+ cas  =c47
+ eps  =   1.0000000000000001E-015
+ #        1001   2.2999999999999998       0.69999999999999996        9.0320788790706494     
+ afa  =   2.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   9.0320788790706494     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.14499999999999999     
+-->> absolute error E = 9.105E-15     relative error E = 1.358E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.13800000000000001     
+-->> absolute error E = 9.105E-15     relative error E = 1.358E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.27600000000000002     
+-->> absolute error E = 1.143E-09     relative error E = 3.997E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.27400000000000002     
+-->> absolute error E = 1.143E-09     relative error E = 3.997E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c48, data file tcases/tt_mlfm_c48.txt
+ eep  =          15
+ cas  =c48
+ eps  =   1.0000000000000001E-015
+ #        1001   3.2999999999999998       0.69999999999999996        12.959069696057901     
+ afa  =   3.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   12.959069696057901     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.23400000000000001     
+-->> absolute error E = 6.169E-15     relative error E = 4.520E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.22800000000000001     
+-->> absolute error E = 6.169E-15     relative error E = 4.520E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.45900000000000002     
+-->> absolute error E = 1.495E-11     relative error E = 5.930E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.46600000000000003     
+-->> absolute error E = 1.495E-11     relative error E = 5.930E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c49, data file tcases/tt_mlfm_c49.txt
+ eep  =          15
+ cas  =c49
+ eps  =   1.0000000000000001E-015
+ #        1001   4.2999999999999998       0.69999999999999996        16.886060513045098     
+ afa  =   4.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   16.886060513045098     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.40699999999999997     
+-->> absolute error E = 1.163E-15     relative error E = 5.199E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.40300000000000002     
+-->> absolute error E = 1.163E-15     relative error E = 5.199E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.79200000000000004     
+-->> absolute error E = 3.048E-11     relative error E = 7.399E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.76700000000000002     
+-->> absolute error E = 3.048E-11     relative error E = 7.399E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c50, data file tcases/tt_mlfm_c50.txt
+ eep  =          15
+ cas  =c50
+ eps  =   1.0000000000000001E-015
+ #        1001   5.2999999999999998       0.69999999999999996        20.813051330032401     
+ afa  =   5.2999999999999998     
+ bta  =  0.69999999999999996     
+ argz =   20.813051330032401     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.72099999999999997     
+-->> absolute error E = 4.363E-16     relative error E = 5.735E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.69599999999999995     
+-->> absolute error E = 4.363E-16     relative error E = 5.735E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:    1.3500000000000001     
+-->> absolute error E = 9.840E-15     relative error E = 1.181E-12
+
+Calc. its derivative: treat input as 1D (array)
+ time:    1.3610000000000000     
+-->> absolute error E = 9.840E-15     relative error E = 1.181E-12
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c51, data file tcases/tt_mlfm_c51.txt
+ eep  =          15
+ cas  =c51
+ eps  =   1.0000000000000001E-015
+ #        1001  0.65000000000000002        1.0000000000000000        1.0210176124166801     
+ afa  =  0.65000000000000002     
+ bta  =   1.0000000000000000     
+ argz =   1.0210176124166801     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10600000000000000     
+-->> absolute error E = 6.617E-13     relative error E = 4.304E-13
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 6.617E-13     relative error E = 4.304E-13
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17499999999999999     
+-->> absolute error E = 1.403E-09     relative error E = 7.153E-11
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17299999999999999     
+-->> absolute error E = 1.403E-09     relative error E = 7.153E-11
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c52, data file tcases/tt_mlfm_c52.txt
+ eep  =          15
+ cas  =c52
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        1.8064157758141299     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   1.8064157758141299     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10299999999999999     
+-->> absolute error E = 5.604E-17     relative error E = 5.326E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.7000000000000003E-002
+-->> absolute error E = 5.604E-17     relative error E = 5.326E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.20499999999999999     
+-->> absolute error E = 8.247E-10     relative error E = 7.446E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19200000000000000     
+-->> absolute error E = 8.247E-10     relative error E = 7.446E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c53, data file tcases/tt_mlfm_c53.txt
+ eep  =          15
+ cas  =c53
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        2.5918139392115802     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   2.5918139392115802     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.28999999999999998     
+-->> absolute error E = 2.923E-17     relative error E = 3.633E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.26300000000000001     
+-->> absolute error E = 2.923E-17     relative error E = 3.633E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.53000000000000003     
+-->> absolute error E = 1.381E-09     relative error E = 1.773E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.52500000000000002     
+-->> absolute error E = 1.381E-09     relative error E = 1.773E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c54, data file tcases/tt_mlfm_c54.txt
+ eep  =          15
+ cas  =c54
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        3.3772121026090298     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   3.3772121026090298     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.22300000000000000     
+-->> absolute error E = 2.738E-17     relative error E = 3.619E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.21600000000000000     
+-->> absolute error E = 2.738E-17     relative error E = 3.619E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.45700000000000002     
+-->> absolute error E = 6.116E-10     relative error E = 8.174E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.42299999999999999     
+-->> absolute error E = 6.116E-10     relative error E = 8.174E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c55, data file tcases/tt_mlfm_c55.txt
+ eep  =          15
+ cas  =c55
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        4.1626102660064799     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   4.1626102660064799     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10600000000000000     
+-->> absolute error E = 5.037E-17     relative error E = 4.733E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.10100000000000001     
+-->> absolute error E = 5.037E-17     relative error E = 4.733E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19600000000000001     
+-->> absolute error E = 4.546E-10     relative error E = 4.387E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.20699999999999999     
+-->> absolute error E = 4.546E-10     relative error E = 4.387E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c56, data file tcases/tt_mlfm_c56.txt
+ eep  =          15
+ cas  =c56
+ eps  =   1.0000000000000001E-015
+ #        1001  0.65000000000000002        1.0000000000000000        2.0420352248333700     
+ afa  =  0.65000000000000002     
+ bta  =   1.0000000000000000     
+ argz =   2.0420352248333700     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    7.4999999999999997E-002
+-->> absolute error E = 1.041E-16     relative error E = 1.097E-15
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.7000000000000004E-002
+-->> absolute error E = 1.041E-16     relative error E = 1.097E-15
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12900000000000000     
+-->> absolute error E = 1.166E-09     relative error E = 1.291E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.13200000000000001     
+-->> absolute error E = 1.166E-09     relative error E = 1.291E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c57, data file tcases/tt_mlfm_c57.txt
+ eep  =          15
+ cas  =c57
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        3.6128315516282599     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   3.6128315516282599     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.9000000000000006E-002
+-->> absolute error E = 4.278E-17     relative error E = 5.254E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.3000000000000000E-002
+-->> absolute error E = 4.278E-17     relative error E = 5.254E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.591E-10     relative error E = 1.005E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.591E-10     relative error E = 1.005E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c58, data file tcases/tt_mlfm_c58.txt
+ eep  =          15
+ cas  =c58
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        5.1836278784231604     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   5.1836278784231604     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 3.404E+12     relative error E = 5.477E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    8.9999999999999997E-002
+-->> absolute error E = 3.404E+12     relative error E = 5.477E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17999999999999999     
+-->> absolute error E = 9.031E+12     relative error E = 5.487E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17399999999999999     
+-->> absolute error E = 9.031E+12     relative error E = 5.487E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c59, data file tcases/tt_mlfm_c59.txt
+ eep  =          15
+ cas  =c59
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        6.7544242052180596     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   6.7544242052180596     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.5000000000000001E-002
+-->> absolute error E = 1.287E+34     relative error E = 3.783E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 1.287E+34     relative error E = 3.783E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19700000000000001     
+-->> absolute error E = 1.734E+34     relative error E = 3.801E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19100000000000000     
+-->> absolute error E = 1.734E+34     relative error E = 3.801E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c60, data file tcases/tt_mlfm_c60.txt
+ eep  =          15
+ cas  =c60
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        8.3252205320129509     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   8.3252205320129509     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10400000000000000     
+-->> absolute error E = 6.362E-17     relative error E = 5.488E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.9000000000000005E-002
+-->> absolute error E = 6.362E-17     relative error E = 5.488E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19600000000000001     
+-->> absolute error E = 4.566E-10     relative error E = 4.079E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19900000000000001     
+-->> absolute error E = 4.566E-10     relative error E = 4.079E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c61, data file tcases/tt_mlfm_c61.txt
+ eep  =          15
+ cas  =c61
+ eps  =   1.0000000000000001E-015
+ #        1001  0.65000000000000002        1.0000000000000000        3.0630528372500501     
+ afa  =  0.65000000000000002     
+ bta  =   1.0000000000000000     
+ argz =   3.0630528372500501     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.9000000000000006E-002
+-->> absolute error E = 4.053E-17     relative error E = 4.939E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.3000000000000000E-002
+-->> absolute error E = 4.053E-17     relative error E = 4.939E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12300000000000000     
+-->> absolute error E = 1.076E-09     relative error E = 1.500E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12100000000000000     
+-->> absolute error E = 1.076E-09     relative error E = 1.500E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c62, data file tcases/tt_mlfm_c62.txt
+ eep  =          15
+ cas  =c62
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        5.4192473274423900     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   5.4192473274423900     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.7000000000000003E-002
+-->> absolute error E = 1.387E+68     relative error E = 2.114E-13
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 1.387E+68     relative error E = 2.114E-13
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18600000000000000     
+-->> absolute error E = 8.580E+68     relative error E = 2.115E-13
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18300000000000000     
+-->> absolute error E = 8.580E+68     relative error E = 2.115E-13
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c63, data file tcases/tt_mlfm_c63.txt
+ eep  =          15
+ cas  =c63
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        7.7754418176347402     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   7.7754418176347402     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10100000000000001     
+-->> absolute error E = 1.228E-16     relative error E = 6.993E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 1.228E-16     relative error E = 6.993E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18300000000000000     
+-->> absolute error E = 1.527E-09     relative error E = 6.947E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17399999999999999     
+-->> absolute error E = 1.527E-09     relative error E = 6.947E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c64, data file tcases/tt_mlfm_c64.txt
+ eep  =          15
+ cas  =c64
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        10.131636307827099     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   10.131636307827099     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.12500000000000000     
+-->> absolute error E = 2.983E-17     relative error E = 3.580E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.12000000000000000     
+-->> absolute error E = 2.983E-17     relative error E = 3.580E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.26300000000000001     
+-->> absolute error E = 6.218E-10     relative error E = 7.478E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.23699999999999999     
+-->> absolute error E = 6.218E-10     relative error E = 7.478E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c65, data file tcases/tt_mlfm_c65.txt
+ eep  =          15
+ cas  =c65
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        12.487830798019401     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   12.487830798019401     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 1.271E+20     relative error E = 2.636E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.10000000000000001     
+-->> absolute error E = 1.271E+20     relative error E = 2.636E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18300000000000000     
+-->> absolute error E = 9.841E+19     relative error E = 2.667E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17999999999999999     
+-->> absolute error E = 9.841E+19     relative error E = 2.667E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c66, data file tcases/tt_mlfm_c66.txt
+ eep  =          15
+ cas  =c66
+ eps  =   1.0000000000000001E-015
+ #        1001  0.65000000000000002        1.0000000000000000        7.1471232869167798     
+ afa  =  0.65000000000000002     
+ bta  =   1.0000000000000000     
+ argz =   7.1471232869167798     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.4000000000000000E-002
+-->> absolute error E = 6.830+110     relative error E = 9.070E-13
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.8000000000000004E-002
+-->> absolute error E = 6.830+110     relative error E = 9.070E-13
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18600000000000000     
+-->> absolute error E = 1.254+112     relative error E = 9.070E-13
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17199999999999999     
+-->> absolute error E = 1.254+112     relative error E = 9.070E-13
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+Not found file: tcases/tt_mlfm_c67.txt
+
+************************************************************************
+CASE c68, data file tcases/tt_mlfm_c68.txt
+ eep  =          15
+ cas  =c68
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        18.142697574481101     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   18.142697574481101     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 2.067E+51     relative error E = 3.449E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    8.9999999999999997E-002
+-->> absolute error E = 2.067E+51     relative error E = 3.449E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17299999999999999     
+-->> absolute error E = 5.515E+51     relative error E = 3.472E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17199999999999999     
+-->> absolute error E = 5.515E+51     relative error E = 3.472E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c69, data file tcases/tt_mlfm_c69.txt
+ eep  =          15
+ cas  =c69
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        23.640484718263199     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   23.640484718263199     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.5000000000000001E-002
+-->> absolute error E = 2.701E-14     relative error E = 2.566E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.2999999999999999E-002
+-->> absolute error E = 2.701E-14     relative error E = 2.566E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18099999999999999     
+-->> absolute error E = 6.671E-10     relative error E = 4.968E-10
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.18099999999999999     
+-->> absolute error E = 6.671E-10     relative error E = 4.968E-10
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c70, data file tcases/tt_mlfm_c70.txt
+ eep  =          15
+ cas  =c70
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        29.138271862045301     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   29.138271862045301     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10800000000000000     
+-->> absolute error E = 5.153E-17     relative error E = 5.499E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:   0.11200000000000000     
+-->> absolute error E = 5.153E-17     relative error E = 5.499E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.22300000000000000     
+-->> absolute error E = 4.509E-10     relative error E = 4.881E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.22500000000000001     
+-->> absolute error E = 4.509E-10     relative error E = 4.881E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+Not found file: tcases/tt_mlfm_c71.txt
+
+************************************************************************
+CASE c72, data file tcases/tt_mlfm_c72.txt
+ eep  =          15
+ cas  =c72
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        10.838494654884800     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   10.838494654884800     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10500000000000000     
+-->> absolute error E = 6.241E-17     relative error E = 5.654E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 6.241E-17     relative error E = 5.654E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19800000000000001     
+-->> absolute error E = 8.335E-10     relative error E = 6.987E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.20999999999999999     
+-->> absolute error E = 8.335E-10     relative error E = 6.987E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c73, data file tcases/tt_mlfm_c73.txt
+ eep  =          15
+ cas  =c73
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        15.550883635269500     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   15.550883635269500     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.6000000000000003E-002
+-->> absolute error E = 3.470E-17     relative error E = 4.508E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.3000000000000000E-002
+-->> absolute error E = 3.470E-17     relative error E = 4.508E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12400000000000000     
+-->> absolute error E = 1.364E-09     relative error E = 1.852E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12200000000000000     
+-->> absolute error E = 1.364E-09     relative error E = 1.852E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c74, data file tcases/tt_mlfm_c74.txt
+ eep  =          15
+ cas  =c74
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        20.263272615654198     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   20.263272615654198     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 3.645E-10     relative error E = 4.359E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.1999999999999998E-002
+-->> absolute error E = 3.645E-10     relative error E = 4.359E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17799999999999999     
+-->> absolute error E = 8.305E-10     relative error E = 7.423E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17699999999999999     
+-->> absolute error E = 8.305E-10     relative error E = 7.423E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c75, data file tcases/tt_mlfm_c75.txt
+ eep  =          15
+ cas  =c75
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        24.975661596038901     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   24.975661596038901     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.5000000000000001E-002
+-->> absolute error E = 6.332E+19     relative error E = 2.562E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 6.332E+19     relative error E = 2.562E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.18099999999999999     
+-->> absolute error E = 4.908E+19     relative error E = 2.596E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17799999999999999     
+-->> absolute error E = 4.908E+19     relative error E = 2.596E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c76, data file tcases/tt_mlfm_c76.txt
+ eep  =          15
+ cas  =c76
+ eps  =   1.0000000000000001E-015
+ #        1001  0.65000000000000002        1.0000000000000000        5.1050880620834098     
+ afa  =  0.65000000000000002     
+ bta  =   1.0000000000000000     
+ argz =   5.1050880620834098     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.2999999999999999E-002
+-->> absolute error E = 1.609E-16     relative error E = 8.930E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    8.8999999999999996E-002
+-->> absolute error E = 1.609E-16     relative error E = 8.930E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17299999999999999     
+-->> absolute error E = 1.360E-09     relative error E = 4.625E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17100000000000001     
+-->> absolute error E = 1.360E-09     relative error E = 4.625E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c77, data file tcases/tt_mlfm_c77.txt
+ eep  =          15
+ cas  =c77
+ eps  =   1.0000000000000001E-015
+ #        1001  0.75000000000000000        1.0000000000000000        9.0320788790706494     
+ afa  =  0.75000000000000000     
+ bta  =   1.0000000000000000     
+ argz =   9.0320788790706494     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    6.7000000000000004E-002
+-->> absolute error E = 4.362E-17     relative error E = 5.404E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    6.3000000000000000E-002
+-->> absolute error E = 4.362E-17     relative error E = 5.404E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.562E-10     relative error E = 1.014E-08
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.12300000000000000     
+-->> absolute error E = 7.562E-10     relative error E = 1.014E-08
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c78, data file tcases/tt_mlfm_c78.txt
+ eep  =          15
+ cas  =c78
+ eps  =   1.0000000000000001E-015
+ #        1001  0.84999999999999998        1.0000000000000000        12.959069696057901     
+ afa  =  0.84999999999999998     
+ bta  =   1.0000000000000000     
+ argz =   12.959069696057901     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:    9.8000000000000004E-002
+-->> absolute error E = 6.757E+72     relative error E = 2.649E-14
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.0999999999999998E-002
+-->> absolute error E = 6.757E+72     relative error E = 2.649E-14
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.17399999999999999     
+-->> absolute error E = 1.791E+73     relative error E = 2.649E-14
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.17299999999999999     
+-->> absolute error E = 1.791E+73     relative error E = 2.649E-14
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c79, data file tcases/tt_mlfm_c79.txt
+ eep  =          15
+ cas  =c79
+ eps  =   1.0000000000000001E-015
+ #        1001  0.94999999999999996        1.0000000000000000        16.886060513045098     
+ afa  =  0.94999999999999996     
+ bta  =   1.0000000000000000     
+ argz =   16.886060513045098     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10400000000000000     
+-->> absolute error E = 6.323E-17     relative error E = 5.828E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.6000000000000002E-002
+-->> absolute error E = 6.323E-17     relative error E = 5.828E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19300000000000000     
+-->> absolute error E = 6.411E-10     relative error E = 5.764E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.20899999999999999     
+-->> absolute error E = 6.411E-10     relative error E = 5.764E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
+
+************************************************************************
+CASE c80, data file tcases/tt_mlfm_c80.txt
+ eep  =          15
+ cas  =c80
+ eps  =   1.0000000000000001E-015
+ #        1001   1.0500000000000000        1.0000000000000000        20.813051330032401     
+ afa  =   1.0500000000000000     
+ bta  =   1.0000000000000000     
+ argz =   20.813051330032401     
+------------------------------------------------------------------------
+
+Robert Garrappa method.
+
+Calc. Mittag-Leffler function: treat input as 0D (scalar)
+ time:   0.10100000000000001     
+-->> absolute error E = 9.497E-17     relative error E = 7.354E-16
+
+Calc. Mittag-Leffler function: treat input as 1D (array)
+ time:    9.7000000000000003E-002
+-->> absolute error E = 9.497E-17     relative error E = 7.354E-16
+
+Calc. its derivative: treat input as 0D (scalar)
+ time:   0.19000000000000000     
+-->> absolute error E = 4.587E-10     relative error E = 3.717E-09
+
+Calc. its derivative: treat input as 1D (array)
+ time:   0.19600000000000001     
+-->> absolute error E = 4.587E-10     relative error E = 3.717E-09
+
+For EXTRA-TESTS, treating input as 2D and 3D, read fort.13
