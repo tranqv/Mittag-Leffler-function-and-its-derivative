@@ -19,18 +19,20 @@
 !     ./tst_main_v02.exe.gfc cas=c40 eep=15
 !     ./tst_main_v02.exe.gfc cas=c40
 !
+!     ./tst_main_v02.exe.gfc afa=0.75 bta=1.0 z='(-1.0,1.0)'
+!
 !
       program tst_main_v02
 !    
-      use mod_mlf_garrappa, only: mlf_garrappa, mld_garrappa, & 
-                                  mlf_set_epsilon
+      use mod_mlf_garrappa, only: genmlf, mlf_garrappa, &
+                                  mld_garrappa, mlf_set_epsilon
 !      
       implicit none 
 ! 
       integer, parameter :: io=123
 !
       complex(8),dimension(:),allocatable :: zj, ej, ee
-      real(8) :: afa,bta,argz, dt, rho  
+      real(8) :: afa, bta, gma, argz, dt, rho  
       complex(8) :: z, tmp
       complex(4) :: zsp
       complex(8) :: zfi, zdi, ufi, udi
@@ -50,8 +52,11 @@
       integer :: nd1, nd2, nd3, eep  
 !
 !
-      cas = 'c01'
-      eep = 15 
+      cas = ''
+      eep = 15
+      afa = 0
+      bta = 1
+      gma = 1
 !
       do j = 1, command_argument_count()
          charg = '' 
@@ -62,7 +67,16 @@
             cas = adjustl(trim(chval))
          case('eep')
             read(chval,*) eep 
-
+!         
+         case('afa')
+            read(chval,*) afa
+         case('bta')
+            read(chval,*) bta
+         case('gma')
+            read(chval,*) gma
+         case('z')
+            read(chval,*) z 
+!
          case default 
             cycle 
          end select 
@@ -75,6 +89,19 @@
 
       call mlf_set_epsilon( rho ) 
 
+
+      if ( afa .eq. 0.0d0 ) then 
+         if ( len_trim(cas) .eq. 0 ) then 
+            STOP 
+         else 
+            goto 1000
+         endif 
+      else 
+         goto 2000 
+      endif 
+
+
+1000  continue 
 !      
 !     Case cas-th: output from calcualting M-L directly using 
 !     the multi-precision package FM.
@@ -439,7 +466,34 @@
 !
       deallocate( zj, ej, ee )
 !
-      stop 
+      STOP 
+!
+!
+!
+2000  continue 
+!
+      call evaltime ( 0, dt )
+
+!----------------------------------------------------------------------
+!        Calc. Mittag-Leffler function treats input as 0D (scalar). 
+!        Syntax:
+!
+         ufi = genmlf ( afa, bta, gma, z ) 
+!         
+!----------------------------------------------------------------------
+
+      call evaltime ( 1, dt )
+
+      write(*,305) afa, bta, gma, z, ufi, dt, '(sec)'
+
+!
+      STOP 
+!
+305   format(/,'alpha =',1pe14.7,', beta =',1pe14.7,  &
+              ', gamma =',1pe14.7,  /,              &
+               '  z  = (',1pe24.17,',',1pe24.17,'),', /, & 
+               'E(z) = (',1pe24.17,',',1pe24.17,'),', 2x,  &
+               'time = ', 1pe12.5, ' (s)', 1x, a, / )
 !
 506   write(*,'(a)') 'Not found file: tcases/tt_mlfm_'//cas//'.txt'
       stop 

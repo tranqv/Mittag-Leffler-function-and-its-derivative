@@ -103,6 +103,23 @@
 !     this, present_epsilon is set to default_epsilon = 10^(-15).
 !
       public :: mlf_set_epsilon
+!----------------------------------------------------------------------
+!
+!     General Mittag Leffler function for various kinds of input:
+!
+      public :: genmlf
+      interface genmlf
+         module procedure genmlf_garrappa_01 
+         module procedure genmlf_garrappa_02 
+         module procedure genmlf_garrappa_03 
+         module procedure genmlf_garrappa_04 
+      end interface 
+!
+!     Usage: 
+!
+!        E = genmlf ( afa, bta, gma, z )
+!
+!     for z and E are defined as scalar (0D) or arrays (1D, 2D, or 3D).
 !
 !----------------------------------------------------------------------
 !
@@ -151,20 +168,20 @@
 !
 !     Local variables:
 !
-      complex(rk) :: eout(1), zinp(1)
+      complex(rk) :: zloc(2)
 !      
-      zinp(1) = z
+      zloc(1) = z
 !      
-      call sub_genmlf_multishot (                &
-           afa, bta, 1.0_rk, 1, 1, zinp, 1, eout )
+      call sub_genmlf_multishot (                      &
+           afa, bta, 1.0_rk, 1, 1, zloc(1), 1, zloc(2) )
 !           
-      e = eout(1)
+      e = zloc(2) 
 !     
       return 
       end function
 !=====      
 !
-!     0D and and 1D inputs
+!     1D input
 !
       function mlf_garrappa_02 ( afa, bta, z ) result(E)
 !
@@ -225,6 +242,98 @@
 !
       return 
       end function
+!======================================================================
+!
+!     General ML function:
+!
+      function genmlf_garrappa_01 ( afa, bta, gma, z ) result(E)
+!
+      implicit none 
+!
+      complex(rk),intent(in)  :: z
+      real(rk),intent(in)     :: afa, bta, gma
+      complex(rk)             :: E
+!
+!     Dependencies:
+!
+!     external :: sub_genmlf_multishot
+!
+!     Local variables:
+!
+      complex(rk) :: zloc(2)
+!      
+      zloc(1) = z
+!      
+      call sub_genmlf_multishot (                   &
+           afa, bta, gma, 1, 1, zloc(1), 1, zloc(2) )
+!           
+      e = zloc(2) 
+!     
+      return 
+      end function
+!=====     
+!
+!     1D input
+!
+      function genmlf_garrappa_02 ( afa, bta, gma, z ) result(E)
+!
+      implicit none 
+!
+      real(rk),intent(in)                 :: afa, bta, gma
+      complex(rk),dimension(:),intent(in) :: z
+      complex(rk),dimension(size(z))      :: E
+!
+!     Dependencies:
+!
+!     external :: sub_genmlf_multishot
+!
+      call sub_genmlf_multishot (afa,bta,gma,size(z),1,z,1,E)
+!
+      return 
+      end function
+!=====
+!
+!     2D input
+!
+      function genmlf_garrappa_03 ( afa, bta, gma, z ) result(E)
+!
+      implicit none 
+!
+      real(rk),intent(in)                        :: afa, bta, gma
+      complex(rk),dimension(:,:),intent(in)      :: z
+      complex(rk),dimension(size(z,1),size(z,2)) :: E
+!
+!     Dependencies:
+!
+!     external :: sub_genmlf_multishot
+!
+      call sub_genmlf_multishot (                    &
+           afa, bta, gma,                            &
+           size(z,1)*size(z,2), 1, z(:,1), 1, E(:,1) )
+!
+      return 
+      end function
+!=====     
+!     3D input
+!
+      function genmlf_garrappa_04 ( afa, bta, gma, z ) result(E)
+!
+      implicit none 
+!
+      real(rk),intent(in)                     :: afa, bta, gma
+      complex(rk),dimension(:,:,:),intent(in) :: z
+      complex(rk),dimension(size(z,1),size(z,2),size(z,3)) :: E
+!
+!     Dependencies:
+!
+!     external :: sub_genmlf_multishot
+!
+      call sub_genmlf_multishot (                                  &
+           afa,  bta, gma,                                         &
+           size(z,1)*size(z,2)*size(z,3), 1, z(:,1,1), 1, E(:,1,1) )
+!
+      return 
+      end function
 !=======================================================================
 !
 !     Derivative of Mittag-Leffer function with two parameters. 
@@ -246,22 +355,22 @@
 !
 !     Local variables:
 !
-      complex(rk) :: fout(1), zinp(1)
+      complex(rk) :: zloc(2)
 !
 !     Check if the arguments afa>0. Otherwise, do nothing and report. 
 !
       if ( afa .le. 0.0_rk ) then 
          write(*,'(a,1pe10.3)') &
-            'FATAL ERROR: Input to mld_garrappa_01 wrong, afa<=0,',afa
+            'ERROR: Wrong input to mld_garrappa_01, afa<=0,',afa
          return 
       endif 
 !
-      zinp(1) = z
+      zloc(1) = z
 !
-      call sub_dermlf_multishot (        &
-           afa, bta, 1, 1, zinp, 1, fout )
+      call sub_dermlf_multishot (              &
+           afa, bta, 1, 1, zloc(1), 1, zloc(2) )
 !
-      f = fout(1)
+      f = zloc(2)
 !
       return 
       end function
@@ -282,7 +391,7 @@
 !
       if ( afa .le. 0.0_rk ) then 
          write(*,'(a,1pe10.3)') &
-            'FATAL ERROR: Input to mld_garrappa_02 wrong, afa<=0,',afa
+            'ERROR: Wrong input to mld_garrappa_02, afa<=0,',afa
          return 
       endif 
 !
@@ -307,7 +416,7 @@
 !
       if ( afa .le. 0.0_rk ) then 
          write(*,'(a,1pe10.3)') &
-            'FATAL ERROR: Input to mld_garrappa_03 wrong, afa<=0,',afa
+            'ERROR: Wrong input to mld_garrappa_03, afa<=0,',afa
          return 
       endif 
 !
@@ -333,7 +442,7 @@
 !
       if ( afa .le. 0.0_rk ) then 
          write(*,'(a,1pe10.3)') &
-            'FATAL ERROR: Input to mld_garrappa_03 wrong, afa<=0,',afa
+            'ERROR: Wrong input to mld_garrappa_03, afa<=0,',afa
          return 
       endif 
 !
@@ -460,14 +569,14 @@
 !     HERE WE GO 
 !
       if ( afa .le. 0.0_rk .or. gma .le. 0.0_rk ) then 
-         write(012,907) 
+         write(*,907) 
          return 
       endif 
 
       gma_is_not_one = abs(gma-1) .gt. reps
 
       if ( gma_is_not_one .and. (afa > 1.0_rk) ) then 
-         write(012,908) 
+         write(*,908) 
          return 
       endif 
 !
@@ -513,7 +622,7 @@
 !        Check parameters and arguments for the three parameter case
 !
          if ( gma_is_not_one .and. ( aagz <= afa*picons ) ) then 
-            write(012,909) 
+            write(*,909) 
             return 
          endif 
 !
@@ -1684,7 +1793,7 @@
 !     Local varaibles:
 !
       real(rk),parameter :: qconst = 0.99e0_rk
-      complex(rk) :: a(2), res(1), zj(1)
+      complex(rk) :: zloc(4)
       real(rk)    :: d, w, absz, rho 
       integer     :: k, k0, k1, nz, j  
 !
@@ -1697,15 +1806,15 @@
 ! 
       do j = 1,n
 !
-         zj(1) = z(1,j) 
-         absz  = abs(zj(1))
+         zloc(1) = z(1,j) 
+         absz    = abs(zloc(1))
 ! 
          if ( absz .eq. 0.0_rk ) then 
 !
 !           For |z|=0: use Eq. (38) only for k=0, the remainder 
 !           as k>0 is zero
 !
-           res(1) = 1.0_rk / specfun_gamma( afa + bta )
+           zloc(2) = 1.0_rk / specfun_gamma( afa + bta )
  
          else if ( absz .le. qconst )  then 
 !
@@ -1749,11 +1858,11 @@
 !
 !           +  Calculating E' from (39): summing up directly for k=0,k0
 !
-            res(1) = 1/ specfun_gamma( afa + bta )
+            zloc(2) = 1/ specfun_gamma( afa + bta )
 !            
             do k = 1,k0
-               res(1) = res(1) + (k+1)*zj(1)**k /           &
-                                 specfun_gamma(afa+bta+afa*k)
+               zloc(2) = zloc(2) + (k+1)*zloc(1)**k /         &
+                                   specfun_gamma(afa+bta+afa*k)
             enddo
 ! 
          else 
@@ -1761,17 +1870,17 @@
 !           For |z|>q, where q=0.1, use (43) with Mittag-Leffler 
 !           function
 !
-            call sub_genmlf_multishot (                        &
-                 afa, bta-1.0_rk, 1.0_rk, 1, 1, zj(1), 1, a(1) )
+            call sub_genmlf_multishot (                             &
+                 afa, bta-1.0_rk, 1.0_rk, 1, 1, zloc(1), 1, zloc(3) )
 ! 
-            call sub_genmlf_multishot (                        &
-                 afa, bta,        1.0_rk, 1, 1, zj(1), 1, a(2) )
+            call sub_genmlf_multishot (                             &
+                 afa, bta,        1.0_rk, 1, 1, zloc(1), 1, zloc(4) )
 ! 
-            res(1) = ( a(1) - a(2)*(bta-1.0_rk) )/( afa*zj(1) )
+            zloc(2) = ( zloc(3) - zloc(4)*(bta-1.0_rk) )/(afa*zloc(1))
 !
          endif 
 ! 
-         f(1,j) =  res(1)
+         f(1,j) =  zloc(2)
 ! 
       enddo
       return 

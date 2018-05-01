@@ -50,11 +50,18 @@
       module : $mod 
       compler: $com 
 
-      Example: to run testcase c40 with data reference file tt_mlfm_c40.txt
+      Example: 
+      + To run testcase c40 with data reference file tt_mlfm_c40.txt
 
-      ./${pro}.exe${exte} cas=c40 eep=6 
-      ./${pro}.exe${exte} cas=c40 eep=8 
-      ./${pro}.exe${exte} cas=c40 eep=10
-      ./${pro}.exe${exte} cas=c40 eep=15
-      ./${pro}.exe${exte} cas=c40
+         ./${pro}.exe${exte} cas=c40 eep=6 
+         ./${pro}.exe${exte} cas=c40 eep=8 
+         ./${pro}.exe${exte} cas=c40 eep=10
+         ./${pro}.exe${exte} cas=c40 eep=15
+         ./${pro}.exe${exte} cas=c40
+
+      + For a single shot, invoke
+
+         ./${pro}.exe${exte} afa=0.75  bta=1.0   z='( -10.0, 5.0 )'
+
 OUT
+
