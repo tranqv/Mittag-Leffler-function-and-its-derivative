@@ -29,7 +29,7 @@
 !     or viet204@gmail.com. 
 !
 !=======================================================================
-!     Version 01, dated Apr 29 2018
+!     Version 01, dated Apr 29 2018 (obsolete version)
 !     
 !     +  passed more than 70 test cases fantastically. The test cases 
 !        should be released together with this code, however, without 

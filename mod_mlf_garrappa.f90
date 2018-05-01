@@ -29,7 +29,7 @@
 !     or viet204@gmail.com. 
 !
 !=======================================================================
-!     Version 02, dated Tue May 1 2018
+!     Version 02, dated Tue May 1 2018 (current version)
 !     
 !     +  passed more than 70 test cases fantastically. The test cases 
 !        are released together with this code, however, with a rough
@@ -99,7 +99,8 @@
 !
 !-----------------------------------------------------------------------
 !
-!     To reset the default_epsilon on demand:
+!     To reset the prepenst_epsilon above on demand. If we do not call 
+!     this, present_epsilon is set to default_epsilon = 10^(-15).
 !
       public :: mlf_set_epsilon
 !
@@ -1740,8 +1741,8 @@
 !           +  Calculating k0 from k1, for computing (39):
 !
 !Hint:      You may want to edit something right here to estimate 
-!           truncation errors by the relative error estimate, 
-!           instead of the absolute error estimate.
+!           the truncation errors by the relative error estimate, 
+!           instead of the absolute error estimate. Check, plz!
 !
             rho = present_epsilon
             k0  = max( k1, floor(log(rho*(1.0_rk-absz))/log(absz)) )

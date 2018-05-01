@@ -1,34 +1,32 @@
 !
+!  TEST DRIVER FOR VERSION 02 (update)
+!
 !  Compile with gfortran:
 !
 !     gfortran -O3 -c mod_mlf_garrappa.f90
-!     gfortran -O3 tst_main_02.f90 mod_mlf_garrappa.o -o tst_main_02.exe.gfc
+!     gfortran -O3 tst_main_v02.f90 mod_mlf_garrappa.o -o tst_main_v02.exe.gfc
 !
 !  Compile with ifort:
 !
 !     ifort -O3 -c mod_mlf_garrappa.f90
-!     ifort -O3 tst_main_02.f90 mod_mlf_garrappa.o -o tst_main_02.exe.ifc
+!     ifort -O3 tst_main_v02.f90 mod_mlf_garrappa.o -o tst_main_v02.exe.ifc
 !     
 !  To run, e.g. the test case c40, 
 !
-!     ./tst_main_02.exe.gfc cas=c40 eep=6 
-!     ./tst_main_02.exe.gfc cas=c40 eep=8 
-!     ./tst_main_02.exe.gfc cas=c40 eep=10
-!     ./tst_main_02.exe.gfc cas=c40 eep=15
-!     ./tst_main_02.exe.gfc cas=c40
+!     ./tst_main_v02.exe.gfc cas=c40 eep=6 
+!     ./tst_main_v02.exe.gfc cas=c40 eep=8 
+!     ./tst_main_v02.exe.gfc cas=c40 eep=10
+!     ./tst_main_v02.exe.gfc cas=c40 eep=15
+!     ./tst_main_v02.exe.gfc cas=c40
 !
 !
-      program tst_main_02
+      program tst_main_v02
 !    
       use mod_mlf_garrappa, only: mlf_garrappa, mld_garrappa, & 
                                   mlf_set_epsilon
 !      
       implicit none 
 ! 
-!     Dependences: a simple RNG to generate data for the extra test
-!
-!     real(8) :: auxifun_uniran
-!
       integer, parameter :: io=123
 !
       complex(8),dimension(:),allocatable :: zj, ej, ee
@@ -70,7 +68,9 @@
          end select 
       enddo
 !
-
+!     If we do not call this subroutine, epsilon is set to 10^(-15)
+!     by default.
+!
       rho = 10.0d0**(-eep)
 
       call mlf_set_epsilon( rho ) 
@@ -127,7 +127,13 @@
 
          z = cmplx( rr, ri, kind=8 )
 
+!----------------------------------------------------------------------
+!        Calc. Mittag-Leffler function treats input as 0D (scalar). 
+!        Syntax:
+!
          ufi = mlf_garrappa ( afa, bta, z ) 
+!         
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -180,8 +186,14 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 1D (array). 
+!     Syntax:
+!      
       ej = mlf_garrappa (afa,bta, zj)
+!
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -237,7 +249,13 @@
 
          z = cmplx( rr, ri, kind=8 )
 !
+!----------------------------------------------------------------------
+!        Calc. derivative of the Mittag-Leffler function treats input as 
+!        (0D) scalar, i.e. z. Syntax:
+!
          ufi = mld_garrappa ( afa, bta, z ) 
+!
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -290,8 +308,14 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. derivative of the Mittag-Leffler function treats input as 
+!     1D array, i.e. zj. Syntax:
+!
       ej = mld_garrappa (afa,bta, zj)
+!
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -373,9 +397,14 @@
 
       write(13,304) '2D: Col1 = z(i,j)', 'Col2 = | e(i,j) - "Eexact" |'
 
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 2D and 3D array,
+!     i.e. z2d and z3d, respectively. Syntax:
+!
       e2d = mlf_garrappa ( afa, bta, z2d )  
       e3d = mlf_garrappa ( afa, bta, z3d )  
-
+!
+!----------------------------------------------------------------------
 
       do j=1,nd2
          do i=1,nd1
@@ -519,4 +548,4 @@
       return 
       end function 
 !======================================================================
-      end program tst_main_02
+      end program tst_main_v02

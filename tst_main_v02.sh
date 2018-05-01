@@ -45,7 +45,7 @@
 
    $com ${flag} -c ${mod}.f90                            \
 && $com ${flag} ${pro}.f90 ${mod}.o -o ${pro}.exe${exte} \
-&& echo "cp  ${pro}.exe${exte}  ../" ; cp ${pro}.exe${exte} ../ \
+&& (echo "cp  ${pro}.exe${exte}  ../" ; cp ${pro}.exe${exte} ../ ) \
 && cat << OUT
       module : $mod 
       compler: $com 

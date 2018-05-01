@@ -1,34 +1,32 @@
 !
+!  TEST DRIVER FOR VERSION 01 (obsolete)
+!
 !  Compile with gfortran:
 !
 !     gfortran -O3 -c mod_mlf_garrappa.f90
-!     gfortran -O3 tst_main_01.f90 mod_mlf_garrappa.o -o tst_main_01.exe.gfc
+!     gfortran -O3 tst_main_v01.f90 mod_mlf_garrappa.o -o tst_main_v01.exe.gfc
 !
 !  Compile with ifort:
 !
 !     ifort -O3 -c mod_mlf_garrappa.f90
-!     ifort -O3 tst_main_01.f90 mod_mlf_garrappa.o -o tst_main_01.exe.ifc
+!     ifort -O3 tst_main_v01.f90 mod_mlf_garrappa.o -o tst_main_v01.exe.ifc
 !     
 !  To run, e.g. the test case c40, 
 !
-!     ./tst_main_01.exe.gfc cas=c40 eep=6 
-!     ./tst_main_01.exe.gfc cas=c40 eep=8 
-!     ./tst_main_01.exe.gfc cas=c40 eep=10
-!     ./tst_main_01.exe.gfc cas=c40 eep=15
-!     ./tst_main_01.exe.gfc cas=c40
+!     ./tst_main_v01.exe.gfc cas=c40 eep=6 
+!     ./tst_main_v01.exe.gfc cas=c40 eep=8 
+!     ./tst_main_v01.exe.gfc cas=c40 eep=10
+!     ./tst_main_v01.exe.gfc cas=c40 eep=15
+!     ./tst_main_v01.exe.gfc cas=c40
 !
 !
-      program tst_main_01
+      program tst_main_v01
 !    
       use mod_mlf_garrappa, only: mlf_garrappa, mld_garrappa, & 
                                   mlf_set_epsilon
 !      
       implicit none 
 ! 
-!     Dependences: a simple RNG to generate data for the extra test
-!
-      real(8) :: auxifun_uniran
-!
       integer, parameter :: io=123
 !
       complex(8),dimension(:),allocatable :: zj, ej, ee
@@ -127,7 +125,13 @@
 
          z = cmplx( rr, ri, kind=8 )
 
+!----------------------------------------------------------------------
+!        Calc. Mittag-Leffler function treats input as 0D (scalar). 
+!        Syntax:
+!
          ufi = mlf_garrappa ( afa, bta, z ) 
+!         
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -180,8 +184,14 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 1D (array). 
+!     Syntax:
+!      
       ej = mlf_garrappa (afa,bta, zj)
+!
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -237,7 +247,13 @@
 
          z = cmplx( rr, ri, kind=8 )
 !
+!----------------------------------------------------------------------
+!        Calc. derivative of the Mittag-Leffler function treats input as 
+!        (0D) scalar, i.e. z. Syntax:
+!
          ufi = mld_garrappa ( afa, bta, z ) 
+!
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -261,8 +277,6 @@
          endif 
       endif 
 
-
-
 !
 !
 !     Again,
@@ -273,7 +287,6 @@
 !
       write(*,302) &
       'Calc. its derivative: treat input as 1D (array)' 
-
 
       call evaltime ( 0, dt )
 
@@ -290,8 +303,14 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. derivative of the Mittag-Leffler function treats input as 
+!     1D array, i.e. zj. Syntax:
+!
       ej = mld_garrappa (afa,bta, zj)
+!
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -317,17 +336,6 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
-
-
-
-
-
-
-
-
-
-
 
 !
 !
@@ -369,13 +377,16 @@
       enddo
       enddo
 
-      
-
       write(13,304) '2D: Col1 = z(i,j)', 'Col2 = | e(i,j) - "Eexact" |'
 
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 2D and 3D array,
+!     i.e. z2d and z3d, respectively. Syntax:
+!
       e2d = mlf_garrappa ( afa, bta, z2d )  
       e3d = mlf_garrappa ( afa, bta, z3d )  
-
+!
+!----------------------------------------------------------------------
 
       do j=1,nd2
          do i=1,nd1
@@ -385,10 +396,8 @@
          write(13,*)
       enddo
 
-
       write(13,304) &
          '3D: Col1 = z(i,j,k)', 'Col2 = | e(i,j,k) - "Eexact" |'
-
 
       do k=1,nd3
       do j=1,nd2
@@ -399,11 +408,6 @@
          write(13,*)
       enddo
       enddo
-
-
-
-
-
 !
 !
       close(io)
@@ -484,4 +488,39 @@
       return 
       end subroutine 
 !======================================================================
-      end program tst_main_01
+!
+!     This part is copied from the module, since I do not export it out
+!     to public domain. 
+!
+!=====
+!
+      subroutine auxisub_initrandom
+      implicit none 
+      integer,dimension(:),allocatable :: gieo
+      integer :: i, n
+      logical,save :: rng_not_yet_init = .true.
+!
+      if (rng_not_yet_init) then 
+         call random_seed(size=n)
+         allocate( gieo(n) )
+         call system_clock(count=gieo(1))           
+         do i = 2,n
+            gieo(i) = gieo(i-1) + iand(gieo(i-1),31) + 1 
+         enddo
+         call random_seed(put=gieo)
+         deallocate( gieo )
+         rng_not_yet_init = .false.
+      endif 
+      return 
+      end subroutine  
+!=====
+      function auxifun_uniran() result(r) 
+      implicit none 
+      real(4) :: r
+!
+      call random_number( r )
+!
+      return 
+      end function 
+!======================================================================
+      end program tst_main_v01
