@@ -475,7 +475,7 @@
       call evaltime ( 0, dt )
 
 !----------------------------------------------------------------------
-!        Calc. Mittag-Leffler function treats input as 0D (scalar). 
+!        Calc. Generalized Mittag-Leffler function with 3 parameters 
 !        Syntax:
 !
          ufi = genmlf ( afa, bta, gma, z ) 
