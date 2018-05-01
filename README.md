@@ -34,11 +34,17 @@ Running: To run testcase c01 with data reference file tcases/tt_mlfm_c01.txt,
 
 where cas=c01 is to select the test case c01, and eep=6 is to perform with error estimate about 10^(-6). Details of the reference data files can be read at README.txt in the folder tcases (extract tcases.zip).
 
-To calculate generalized Mittage-Leffler function for 4 parameters, and for each z:
+To calculate the generalized Mittag-Leffler function for 4 parameters, and for each z, perform
 
-+ ./tst_main_v02.exe.gfc afa=0.75  bta=1.0   z='( -10.0, 5.0 )'
++ ./tst_main_v02.exe.gfc afa=0.75  bta=1.0 gma=1.2  z='( -10.0, 1.0 )'
 
-Make sure that there is no white-space around "=" above.
+which should give the output:
+
+alpha = 7.5000000E-01, beta = 1.0000000E+00, gamma = 1.2000000E+00
+  z  = (-1.00000000000000000E+01, 1.00000000000000000E+00),
+E(z) = ( 8.72265651199321222E-03, 1.30548998870915031E-03),  time =  2.00000E-04 (s) (sec)
+
+Make sure that there is no white-space around the character "=" as above.
 
 --------------------------------
 
