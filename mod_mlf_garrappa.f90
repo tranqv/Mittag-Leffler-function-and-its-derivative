@@ -333,9 +333,6 @@
 !        Do not put the following contents into any module. You will 
 !        get error unless you have to edit many things.
 !
-!     Just try and you will know why. In case you won't, and you want 
-!     to know why, feel free to ask me :D
-!
 !======================================================================
 !
 !  Description coppied from the Matlab code of Prof. R. Garrappa:
