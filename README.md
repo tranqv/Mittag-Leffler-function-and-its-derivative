@@ -47,6 +47,15 @@ E(z) = ( 8.72265651199321222E-03, 1.30548998870915031E-03),  time =  2.00000E-04
 Make sure that there is no white-space around the character "=" as above.
 
 --------------------------------
+Syntax:
+
++  e0d = genmlf ( afa, bta, gma, z0d )
++  e1d = genmlf ( afa, bta, gma, z1d )
++  e2d = genmlf ( afa, bta, gma, z2d )
++  e3d = genmlf ( afa, bta, gma, z3d )
+
+for *0d, *1d, *2d, and *3d stand for scalar (0d) and arrays in 1d, 2d, 3d, repsectively.
+--------------------------------
 
 Please test this Fortran code by yourself. Let me know if you can find some regular case that it is FAILED. 
 
