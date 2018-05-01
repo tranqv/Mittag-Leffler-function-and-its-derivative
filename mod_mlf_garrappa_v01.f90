@@ -29,11 +29,12 @@
 !     or viet204@gmail.com. 
 !
 !=======================================================================
-!     Version 02, dated Tue May 1 2018
+!     Version 01, dated Apr 29 2018
 !     
 !     +  passed more than 70 test cases fantastically. The test cases 
-!        are released together with this code, however, with a rough
-!        explanation. I'm going to update more testcases.
+!        should be released together with this code, however, without 
+!        explanation. I will make a rough report on them when I have a
+!        time.
 !
 !     +  compiler for the test cases: gfortran version 4.9.2, ifort 
 !        version 18.0.0.
@@ -45,9 +46,6 @@
 !        don't have time to clean. So just ignore or clean them by
 !        yourself :D 
 !
-!     +  I have packed everything into only one module to not conflict 
-!        with other package. Now the code is really portable and safe.
-!
 !     +  what's else? ...
 !
 !=======================================================================
@@ -56,8 +54,6 @@
       module mod_mlf_garrappa
 !
       implicit none 
-!      
-      private 
 !
 !-----------------------------------------------------------------------
 !
@@ -99,13 +95,7 @@
 !
 !-----------------------------------------------------------------------
 !
-!     To reset the default_epsilon on demand:
-!
-      public :: mlf_set_epsilon
-!
-!----------------------------------------------------------------------
-!
-!     Mittag Leffler function for various shapes of input:
+!     Mittag Leffler: function       
 !
       public :: mlf_garrappa
       interface mlf_garrappa
@@ -121,9 +111,8 @@
 !
 !     for z and E are defined as scalar (0D) or arrays (1D, 2D, or 3D).
 !
-!----------------------------------------------------------------------
 !
-!     Derivative of Mittag Leffler function for shapes of input:
+!     Mittag-Leffler function: its derivatives    
 !
       public :: mld_garrappa
       interface mld_garrappa
@@ -133,7 +122,7 @@
          module procedure mld_garrappa_04
       end interface 
 !      
-!----------------------------------------------------------------------
+!=====
       contains 
 !======================================================================
       function mlf_garrappa_01 ( afa, bta, z ) result(E)
@@ -146,19 +135,10 @@
 !
 !     Dependencies:
 !
-!     external :: sub_genmlf_multishot
+      external :: sub_genmlf_multishot
 !
-!     Local variables:
+      call sub_genmlf_multishot ( afa, bta, 1.0_rk, 1, 1, z, 1, E)
 !
-      complex(rk) :: eout(1), zinp(1)
-!      
-      zinp(1) = z
-!      
-      call sub_genmlf_multishot (                &
-           afa, bta, 1.0_rk, 1, 1, zinp, 1, eout )
-!           
-      e = eout(1)
-!     
       return 
       end function
 !=====      
@@ -175,7 +155,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_genmlf_multishot
+      external :: sub_genmlf_multishot
 !
       call sub_genmlf_multishot (afa,bta,1.0_rk,size(z),1,z,1,E)
 !
@@ -195,7 +175,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_genmlf_multishot
+      external :: sub_genmlf_multishot
 !
       call sub_genmlf_multishot (                    &
            afa, bta, 1.0_rk,                         &
@@ -216,7 +196,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_genmlf_multishot
+      external :: sub_genmlf_multishot
 !
       call sub_genmlf_multishot (                                  &
            afa,  bta, 1.0_rk,                                      &
@@ -241,11 +221,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_dermlf_multishot
-!
-!     Local variables:
-!
-      complex(rk) :: fout(1), zinp(1)
+      external :: sub_dermlf_multishot
 !
 !     Check if the arguments afa>0. Otherwise, do nothing and report. 
 !
@@ -255,12 +231,7 @@
          return 
       endif 
 !
-      zinp(1) = z
-!
-      call sub_dermlf_multishot (        &
-           afa, bta, 1, 1, zinp, 1, fout )
-!
-      f = fout(1)
+      call sub_dermlf_multishot ( afa, bta, 1, 1, z, 1, f )
 !
       return 
       end function
@@ -275,7 +246,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_dermlf_multishot
+      external :: sub_dermlf_multishot
 !
 !     Check if the arguments afa>0. Otherwise, do nothing and report. 
 !
@@ -300,7 +271,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_dermlf_multishot
+      external :: sub_dermlf_multishot
 !
 !     Check if the arguments afa>0. Otherwise, do nothing and report. 
 !
@@ -326,7 +297,7 @@
 !
 !     Dependencies:
 !
-!     external :: sub_dermlf_multishot
+      external :: sub_dermlf_multishot
 !
 !     Check if the arguments afa>0. Otherwise, do nothing and report. 
 !
@@ -357,6 +328,14 @@
 !      
       return 
       end subroutine 
+!======================================================================
+      end module mod_mlf_garrappa
+!======================================================================
+!
+!***  IMPORTANT REMARK: 
+!        Do not put the following contents into any module. You will 
+!        get error unless you have to edit many things. (I did. See v02)
+!
 !======================================================================
 !
 !  Description coppied from the Matlab code of Prof. R. Garrappa:
@@ -423,7 +402,7 @@
       subroutine sub_genmlf_multishot (             &
                  afa, bta, gma, n, incz, z, ince, e )
 !
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !
       implicit none 
 !
@@ -436,9 +415,9 @@
 !
 !     Dependencies:
 !
-!     external :: worksub_ltinv_multishot 
-!     real(rk) :: specfun_gamma
-!     external :: auxisub_initrandom
+      external :: worksub_ltinv_multishot 
+      real(rk) :: specfun_gamma
+      external :: auxisub_initrandom
 !
 !     work-space: 
 !
@@ -567,7 +546,7 @@
                  p, q,  array_mu, array_h, array_n, &
                  admissible_regions, E              )
 !
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !      
       implicit none 
 !
@@ -595,7 +574,7 @@
 !
 !     Dependencies:
 !
-!     external :: primsub_optimalparam_rb
+      external :: primsub_optimalparam_rb
 !
 !     Local variables:
 !
@@ -931,7 +910,7 @@
 !
       subroutine primsub_qsort_r8_idx ( n, array, idord )
 !     
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !      
       implicit none 
 !
@@ -941,7 +920,7 @@
 !
 !     Dependence: 
 !
-!     external :: primsub_r8_quick_sort
+      external :: primsub_r8_quick_sort
 !
 !     local variables:
 !
@@ -961,7 +940,7 @@
       recursive subroutine primsub_r8_quick_sort (      &
                            n, array, idord, left, right )
 !                           
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !
       implicit none 
 !
@@ -973,7 +952,7 @@
 !
 !     Dependence: 
 !
-!     real(4) :: auxifun_uniran
+      real(4) :: auxifun_uniran
 !
 !     local variables:
 !
@@ -1060,7 +1039,7 @@
 !
       function specfun_gamma (x)  result(f)
 !
-!     use mod_mlf_garrappa 
+      use mod_mlf_garrappa 
 !
 !----------------------------------------------------------------------
 !
@@ -1381,7 +1360,7 @@
                  pj, qj, log_eps, epsmul10,        &
                  muj, hj, nj                       )
 !
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !      
       implicit none 
 !
@@ -1553,7 +1532,7 @@
                  pj, log_eps, epsmul10,      &
                  muj, hj, nj                 )
 !                 
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !      
       implicit none 
 !
@@ -1664,7 +1643,7 @@
       subroutine sub_dermlf_multishot (        &
                  afa, bta, n, incz, z, ince, f )
 !
-!     use mod_mlf_garrappa
+      use mod_mlf_garrappa
 !      
       implicit none 
 !
@@ -1677,13 +1656,13 @@
 !
 !     Dependencies:
 !
-!     external :: sub_genmlf_multishot 
-!     real(rk) :: specfun_gamma
+      external :: sub_genmlf_multishot 
+      real(rk) :: specfun_gamma
 !
 !     Local varaibles:
 !
       real(rk),parameter :: qconst = 0.99e0_rk
-      complex(rk) :: a(2), res(1), zj(1)
+      complex(rk) :: a1, a2, res, zj 
       real(rk)    :: d, w, absz, rho 
       integer     :: k, k0, k1, nz, j  
 !
@@ -1696,15 +1675,15 @@
 ! 
       do j = 1,n
 !
-         zj(1) = z(1,j) 
-         absz  = abs(zj(1))
+         zj   = z(1,j) 
+         absz = abs(zj)
 ! 
          if ( absz .eq. 0.0_rk ) then 
 !
 !           For |z|=0: use Eq. (38) only for k=0, the remainder 
 !           as k>0 is zero
 !
-           res(1) = 1.0_rk / specfun_gamma( afa + bta )
+           res = 1.0_rk / specfun_gamma( afa + bta )
  
          else if ( absz .le. qconst )  then 
 !
@@ -1748,11 +1727,10 @@
 !
 !           +  Calculating E' from (39): summing up directly for k=0,k0
 !
-            res(1) = 1/ specfun_gamma( afa + bta )
+            res = 1/ specfun_gamma( afa + bta )
 !            
             do k = 1,k0
-               res(1) = res(1) + (k+1)*zj(1)**k /           &
-                                 specfun_gamma(afa+bta+afa*k)
+               res = res + (k+1)*zj**k/specfun_gamma(afa+bta+afa*k)
             enddo
 ! 
          else 
@@ -1760,23 +1738,20 @@
 !           For |z|>q, where q=0.1, use (43) with Mittag-Leffler 
 !           function
 !
-            call sub_genmlf_multishot (                        &
-                 afa, bta-1.0_rk, 1.0_rk, 1, 1, zj(1), 1, a(1) )
+            call sub_genmlf_multishot (                   &
+                 afa, bta-1.0_rk, 1.0_rk, 1, 1, zj, 1, a1 )
 ! 
-            call sub_genmlf_multishot (                        &
-                 afa, bta,        1.0_rk, 1, 1, zj(1), 1, a(2) )
+            call sub_genmlf_multishot (                   &
+                 afa, bta,        1.0_rk, 1, 1, zj, 1, a2 )
 ! 
-            res(1) = ( a(1) - a(2)*(bta-1.0_rk) )/( afa*zj(1) )
+            res = ( a1 - a2*(bta-1.0_rk) )/( afa*zj )
 !
          endif 
 ! 
-         f(1,j) =  res(1)
+         f(1,j) =  res
 ! 
       enddo
       return 
       end subroutine 
 !=======================================================================
-      end module mod_mlf_garrappa
-!======================================================================
-
 !     __END__
