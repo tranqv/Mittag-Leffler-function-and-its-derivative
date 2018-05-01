@@ -31,8 +31,8 @@ where cas=c01 is to select the test case c01, and eep=6 is to perform with error
 
 --------------------------------
 
-Reports on this Fortran code are welcomed.
+Please test this Fortran code by yourself. Let me know if you can find some regular case that it is failed. Every report on this code is welcomed at emails tranquocviet@tdt.edu.vn or viet204@mail.com.
 
 --------------------------------
 
-Next generation: implement OpenMP into the code.
+Next step: implement OpenMP to the code.
