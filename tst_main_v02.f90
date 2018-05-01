@@ -19,7 +19,7 @@
 !     ./tst_main_v02.exe.gfc cas=c40 eep=15
 !     ./tst_main_v02.exe.gfc cas=c40
 !
-!     ./tst_main_v02.exe.gfc afa=0.75 bta=1.0 z='(-1.0,1.0)'
+!     ./tst_main_v02.exe.gfc afa=0.75 bta=1.0 z='( -1.0, 1.0 )'
 !
 !
       program tst_main_v02
@@ -158,7 +158,8 @@
 !        Calc. Mittag-Leffler function treats input as 0D (scalar). 
 !        Syntax:
 !
-         ufi = mlf_garrappa ( afa, bta, z ) 
+!        ufi = mlf_garrappa ( afa, bta, z ) 
+         ufi = genmlf ( afa, bta, 1.0d0, z )  ! equivalent
 !         
 !----------------------------------------------------------------------
 
@@ -218,7 +219,8 @@
 !     Calc. Mittag-Leffler function treats input as 1D (array). 
 !     Syntax:
 !      
-      ej = mlf_garrappa (afa,bta, zj)
+!     ej = mlf_garrappa (afa,bta, zj)
+      ej = genmlf ( afa, bta, 1.0d0, zj ) ! equivalent
 !
 !----------------------------------------------------------------------
 
@@ -369,17 +371,6 @@
          endif 
       endif 
 
-
-
-
-
-
-
-
-
-
-
-
 !
 !
 !
@@ -428,9 +419,11 @@
 !     Calc. Mittag-Leffler function treats input as 2D and 3D array,
 !     i.e. z2d and z3d, respectively. Syntax:
 !
-      e2d = mlf_garrappa ( afa, bta, z2d )  
-      e3d = mlf_garrappa ( afa, bta, z3d )  
+!     e2d = mlf_garrappa ( afa, bta, z2d )  
+!     e3d = mlf_garrappa ( afa, bta, z3d )  
 !
+      e2d = genmlf ( afa, bta, 1.0d0, z2d )  ! equivalent
+      e3d = genmlf ( afa, bta, 1.0d0, z3d )  ! equivalent
 !----------------------------------------------------------------------
 
       do j=1,nd2
@@ -455,9 +448,6 @@
          write(13,*)
       enddo
       enddo
-
-
-
 
 
 !
