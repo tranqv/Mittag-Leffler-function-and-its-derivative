@@ -636,10 +636,10 @@
 !
 !     Or, m+1 >= klen+2 (DONE). 
 !
-!     In this case, the longest workspace phi_s_star should have length
-!     of m+1, while others have that of m, where m = int(afa) + 2. For 
-!     each input afa, we have the workspaces to works with an array of 
-!     input z(:).
+!     In this case, the length of the longest workspace phi_s_star should
+!     be m+1, while the others have that of m, where m = int(afa) + 2. For 
+!     each input afa, we just need to allocate the workspaces once, for 
+!     any shape of input z(:), e.g. 0D, 1D, 2D, 3D, 4D, 5D, etc.
 !
 !
 !@Evaluation of phi(s_star) for each pole
