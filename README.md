@@ -15,7 +15,7 @@ The package includes
 
 + tst_main_vXX.sh is the bash (Linux) script that supports users to compile the package.
 
-where _vXX marks the current version, e.g. _v01, _v02, etc. The newest version of the module is stayed the same name: mod_mlf_garrappa.f90, while older version are marked by the _vXX.
+where _vXX marks the current version, e.g. _v01, _v02, etc. The newest version of the module is stayed the same name: mod_mlf_garrappa.f90, while older versions are marked by the _vXX.
 
 In case the script tst_main_vXX.sh makes you to be confused, read inside the files mod_mlf_garrappa.f90 and tst_main_vXX.f90 to know how to compile. It is very simple. Here is an example with gfortran compiler (version 4.9.2)
 
@@ -34,7 +34,7 @@ Running: with test case 01 (ref. file data: tcases/tt_mlfm_c01.txt),
 
 where cas=c01 is to select the test case c01, and eep=6 is to perform with error estimate about 10^(-6). 
 
-Details of the reference file data can be read at the README file inside the folder tcase.
+Details of the reference file data can be read at the README file inside the folder tcase (extract tcases.zip).
 
 --------------------------------
 
