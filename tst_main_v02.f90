@@ -29,7 +29,7 @@
 !      
       implicit none 
 ! 
-      integer, parameter :: io=123
+      integer :: io
 !
       complex(8),dimension(:),allocatable :: zj, ej, ee
       real(8) :: afa, bta, gma, argz, dt, rho  
@@ -110,7 +110,7 @@
 
       if ( .not. lg ) goto 506
 
-      open(unit=io,file='tcases/tt_mlfm_'//cas//'.txt',action='read')
+      open(newunit=io,file='tcases/tt_mlfm_'//cas//'.txt',action='read')
 !
 !
       read(io,*) ch, nr, afa, bta, argz
