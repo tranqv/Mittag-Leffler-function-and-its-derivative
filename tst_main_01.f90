@@ -127,7 +127,12 @@
 
          z = cmplx( rr, ri, kind=8 )
 
+!----------------------------------------------------------------------
+!        Calc. Mittag-Leffler function treats input as 0D (scalar). 
+!        Syntax:
+!
          ufi = mlf_garrappa ( afa, bta, z ) 
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -179,8 +184,13 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 1D (array). 
+!     Syntax:
+!
       ej = mlf_garrappa (afa,bta, zj)
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -234,8 +244,13 @@
          ffnom = ffnom + abs(zfi)**2
 
          z = cmplx( rr, ri, kind=8 )
-!
+
+!----------------------------------------------------------------------
+!        Calc. derivative of the Mittag-Leffler function treats input as 
+!        (0D) scalar, i.e. z. Syntax:
+!     
          ufi = mld_garrappa ( afa, bta, z ) 
+!----------------------------------------------------------------------
 
          ufaer = ufaer + abs(ufi-zfi)**2
 
@@ -285,8 +300,13 @@
 
       n0 = nr 
       if ( i .lt. nr )  n0 = i-1
-      
+
+!----------------------------------------------------------------------
+!     Calc. derivative of the Mittag-Leffler function treats input as 
+!     1D array, i.e. zj. Syntax:
+!     
       ej = mld_garrappa (afa,bta, zj)
+!----------------------------------------------------------------------
 
       do i = 1, n0
          ffnom = ffnom + abs( ee(i) )**2
@@ -349,17 +369,18 @@
       enddo
       enddo
       enddo
-
       
 
       write(13,304) '2D: Col1 = z(i,j)', 'Col2 = | e(i,j) - "Eexact" |'
 !
 !
-!     Here are the syntax to perform calculations with 2D and 3D input z*d:
+!----------------------------------------------------------------------
+!     Calc. Mittag-Leffler function treats input as 2D and 3D array,
+!     i.e. z2d and z3d, respectively. Syntax:
 !
       e2d = mlf_garrappa ( afa, bta, z2d )  
       e3d = mlf_garrappa ( afa, bta, z3d )  
-
+!----------------------------------------------------------------------
 
       do j=1,nd2
          do i=1,nd1
