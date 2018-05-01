@@ -9,7 +9,7 @@ I would like to thank him for allowing me to reuse his code so that this Fortran
 
 The package includes
 
-+ mod_mlf_garrappa.f90 is a portable Fortran module for calculation of Mittag Leffler function and its derivative.
++ mod_mlf_garrappa.f90 is a portable Fortran module for calculation of Mittag Leffler function and its derivative with double precision (i.e. real(8) and complex(8)).
 
 + tst_main_vXX.f90 is the first main program for more than 70 test caces which all are maintained in the folder tcases. I'm going to update more testcases.
 
@@ -52,7 +52,7 @@ Syntax:
   e2d = genmlf ( afa, bta, gma, z2d )
   e3d = genmlf ( afa, bta, gma, z3d )
 ```
-for *0d, *1d, *2d, and *3d stand for scalar (0d) and arrays in 1d, 2d, 3d, respectively.
+for *0d, *1d, *2d, and *3d stand for scalar (0d) and arrays in 1d, 2d, 3d, respectively. Herein e*d and z*d must have the same length and dimension.
 
 --------------------------------
 
