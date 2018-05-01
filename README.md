@@ -38,13 +38,11 @@ To calculate the generalized Mittag-Leffler function for three parameters alpha,
 
 + ./tst_main_v02.exe.gfc afa=0.75  bta=1.0 gma=1.2  z='( -10.0, 1.0 )'
 
-which should give the output:
+Make sure that there is no white-space around the character "=" as above. Then it should give the output:
 
 alpha = 7.5000000E-01, beta = 1.0000000E+00, gamma = 1.2000000E+00
   z  = (-1.00000000000000000E+01, 1.00000000000000000E+00),
 E(z) = ( 8.72265651199321222E-03, 1.30548998870915031E-03),  time =  2.00000E-04 (s) (sec)
-
-Make sure that there is no white-space around the character "=" as above.
 
 --------------------------------
 Syntax:
