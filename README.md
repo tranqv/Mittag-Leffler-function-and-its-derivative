@@ -11,26 +11,26 @@ The package includes
 
 + mod_mlf_garrappa.f90 is a portable Fortran module for calculation of Mittag Leffler function and its derivative with double precision (i.e. real(8) and complex(8)).
 
-+ tst_main_vXX.f90 is the first main program for more than 70 test caces which all are maintained in the folder tcases. I'm going to update more testcases.
++ tst_main_v02.f90 is a main program for more than 70 test caces which all are maintained in the folder tcases. I'm going to update more testcases.
 
-+ tst_main_vXX.sh is the bash (Linux) script that supports users to compile the package.
++ tst_main_v02.sh is the bash (Linux) script that supports users to compile the package.
 
-where _vXX marks the current version, e.g. _v01, _v02, etc. The newest version of the module is stayed the same name: mod_mlf_garrappa.f90, while older versions are marked by the _vXX.
+where v02 marks the current version, i.e. version 02. Older stuffs are moved to folder **obsolete/**
 
-In case the script tst_main_vXX.sh makes you to be confused, read inside the files mod_mlf_garrappa.f90 and tst_main_vXX.f90 to know how to compile. It is very simple. Here is an example with gfortran compiler (version 4.9.2)
+In case the script tst_main_v02.sh makes you to be confused, read inside the files mod_mlf_garrappa.f90 and tst_main_v02.f90 to know how to compile. It is very simple. Here is an example with gfortran compiler (version 4.9.2)
 
 Compiling:
 
 + gfortran -O3 -c mod_mlf_garrappa.f90
 
-+ gfortran -O3 tst_main_vXX.f90 mod_mlf_garrappa.o -o tst_main_vXX.exe.gfc
++ gfortran -O3 tst_main_v02.f90 mod_mlf_garrappa.o -o tst_main_v02.exe.gfc
 
-Running: To run testcase c01 with data reference file tcases/tt_mlfm_c01.txt,
+Running: To run testcase c01 with data reference file **tcases/tt_mlfm_c01.txt**,
 
-+ ./tst_main_vXX.exe.gfc cas=c01 eep=6
-+ ./tst_main_vXX.exe.gfc cas=c01 eep=8
-+ ./tst_main_vXX.exe.gfc cas=c01 eep=10
-+ ./tst_main_vXX.exe.gfc cas=c01
++ ./tst_main_v02.exe.gfc cas=c01 eep=6
++ ./tst_main_v02.exe.gfc cas=c01 eep=8
++ ./tst_main_v02.exe.gfc cas=c01 eep=10
++ ./tst_main_v02.exe.gfc cas=c01
 
 where cas=c01 is to select the test case c01, and eep=6 is to perform with error estimate about 10^(-6). Details of the reference data files can be read at README.txt in the folder tcases (extract tcases.zip).
 
