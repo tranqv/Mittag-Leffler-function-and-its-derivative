@@ -33,7 +33,7 @@ Running: To run testcase c01 with data reference file **tcases/tt_mlfm_c01.txt**
 ```
 where cas=c01 is to select the test case c01, and eep=6 is to perform with error estimate about 10^(-6). Details of the reference data files can be read at README.txt in the folder **tcases/**.
 
-To calculate the generalized Mittag-Leffler function for three parameters alpha, beta and gamma, and for each complex number z, perform:
+To calculate the generalized Mittag-Leffler function for three parameters _alpha_ (afa), _beta_ (bta) and _gamma_ (gma), and for each complex number z, perform:
 ```
  ./tst_main_v02.exe.gfc afa=0.75  bta=1.0 gma=1.2  z='( -10.0, 1.0 )'
 ```
