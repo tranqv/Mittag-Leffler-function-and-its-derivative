@@ -837,23 +837,7 @@
 !
       len_s_star = klen - len_s_star 
 !
-!     Well, three above steps were done. So, s_star(:) and 
-!     phi_s_star(:) should have shorter lengths, namely len_s_star. 
-!     There are some zeros at indices from len_s_star+1 to 
-!     klp2, where klp2 = klen + 2, as we allocated them before.
-!
-!
-!     Inserting the origin in the set of the singularities
-!     ...
-!
-!     Now efficient length of phi_s_star = J1 = len_s_star+1
-!     Now efficient length of     s_star = J1 = len_s_star+1
-!
-!     J1 = len_s_star+1 = len_s_star_p1 and J = len_s_star.
-!
       len_s_star_p1 = len_s_star + 1
-!
-!     Inserting zero into thier first places
 !
       phi_s_star(1) = 0.0_rk 
       s_star(1)     = cmplx(0.0_rk,0.0_rk,rk)
@@ -888,11 +872,6 @@
       local_logeps = log_eps 
  
       rtm1 = ( local_logeps - lnep ) / t
-!
-!     Here clearly, we can see that  rtm1 > 0, because 
-!        log_eps ~ log(1.0e-15),  lnep ~ log(2.22e-16)
-!     Hence if we define eps (epsilon) to be less than reps (~2.22e-16)
-!     then we get errors. 
 !
       n_admissible_regions = 0 
 !
@@ -959,14 +938,6 @@
             array_n (j1) = nj 
 
          enddo
-!
-!        To obtain the min of array_n(:). This procedure does not
-!        cost times much, because in general array_n(:) is quite short.
-!
-!        n = iinf 
-!        do j = 1,jj1
-!           if ( n .gt. array_n(j) ) n = array_n(j)
-!        enddo
 !
          n = minval(array_n)
 !
@@ -1046,8 +1017,8 @@
       implicit none 
 !
       integer(ik),intent(in)   :: n 
-      real(rk),dimension(*)    :: array
-      integer(ik),dimension(*) :: idord
+      real(rk),dimension(n)    :: array
+      integer(ik),dimension(n) :: idord
 !
 !     Dependence: 
 !
@@ -1076,8 +1047,8 @@
       implicit none 
 !
       integer(ik),intent(in)   :: n 
-      real(rk),dimension(*)    :: array
-      integer(ik),dimension(*) :: idord
+      real(rk),dimension(n)    :: array
+      integer(ik),dimension(n) :: idord
       integer(ik),intent(in)   :: left
       integer(ik),intent(in)   :: right
 !
@@ -1125,14 +1096,6 @@
       end subroutine 
 !======================================================================
 !
-!     Initializing random number generator (RNG). This RNG is less 
-!     quality. Do we really need an expensive RNG? Not really. Another 
-!     RNG called uni64(), "The 64-bit universal RNG", is the perfect one,
-!     which actually has been removed from here, since I want this 
-!     package to work independently. Trust me. This one is good enough.
-!
-!=====
-!
       subroutine auxisub_initrandom
       implicit none 
       integer,dimension(:),allocatable :: gieo
@@ -1162,12 +1125,6 @@
       return 
       end function 
 !======================================================================
-!
-!     Yes. Fortran has its own intrinsic gamma function. Why do I make
-!     another wheel here? Read the following comments.
-!
-!=====
-!
       function specfun_gamma (x)  result(f)
 !
 !     use mod_mlf_garrappa 
@@ -1268,32 +1225,6 @@
 !
 !  Modified by Tran Quoc Viet, tranquocviet@tdt.edu.vn
 !              Sat Apr 28 17:13:38 +07 2018
-!
-!----------------------------------------------------------------------
-!
-!     level 1: fixed parameters parameters
-!
-!     integer,parameter :: r4 = kind(1.0e0), r8 = kind(1.0d0)
-!     integer,parameter :: i4 = selected_int_kind(9)
-!     integer,parameter :: i8 = selected_int_kind(18)
-!      
-!     level 2: choose the precision that you want to maintain
-!
-!     integer,parameter :: rk = r8
-!     integer,parameter :: ik = i4 
-!
-!     level 3: machine dependent constants
-!
-!     integer(ik),parameter :: iinf = huge(iinf)
-!     real(rk),parameter    :: rinf = huge(rinf)
-!     real(rk),parameter    :: rtin = tiny(rtin)
-!     real(rk),parameter    :: reps = epsilon(reps)
-!     real(rk),parameter    :: lnep = log(reps)
-!
-!***  WE HAVE TO DEFINE THIS CONSTANT MANUALLY:
-!
-!     real(rk),parameter    :: xbig = 171.624_rk      ! if rk=r8 
-!     real(rk),parameter    :: xbig =  35.040_rk      ! if rk=r4 
 !
 !----------------------------------------------------------------------
 !
