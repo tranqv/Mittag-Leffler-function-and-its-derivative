@@ -51,13 +51,13 @@ Syntax:
   e2d = genmlf ( afa, bta, gma, z2d )
   e3d = genmlf ( afa, bta, gma, z3d )
 ```
-for *0d, *1d, *2d, and *3d stand for scalar (0d) and arrays in 1d, 2d, 3d, respectively. Herein e*d and z*d must have the same length and dimension.
+for 0d, 1d, 2d, and 3d stand for scalar (0d) and arrays in 1d, 2d, 3d, respectively. Read **tst_main_v02.f90**.
 
 --------------------------------
 
-Please test this Fortran code by yourself. Let me know if you can find some regular case that it is FAILED. 
+Please test this Fortran code by yourself. Please let me know if you can find some regular case that it is FAILED. 
 
-I hope that this package is helpful for those who work on this topic.
+I hope that this package is helpful for persons who work on this topic.
 
 Every report on this code is welcomed at tranquocviet@tdt.edu.vn or viet204@mail.com
 
