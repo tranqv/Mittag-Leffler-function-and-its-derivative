@@ -572,13 +572,24 @@
          write(*,907) 
          return 
       endif 
-
+!
       gma_is_not_one = abs(gma-1) .gt. reps
-
+!
       if ( gma_is_not_one .and. (afa > 1.0_rk) ) then 
          write(*,908) 
          return 
       endif 
+!
+!     afa=bta=gma=1
+!
+      if ( (.not. gma_is_not_one) .and. &
+            abs(afa-1) .lt. reps  .and. &
+            abs(bta-1) .lt. reps        ) then 
+         do j = 1,n      
+            e(1,j) = exp(z(1,j))
+         enddo 
+         return 
+      endif
 !
 !     Initializing RNG for the quick sort:
 !
