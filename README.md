@@ -58,6 +58,6 @@ Please test this Fortran code by yourself. Please let me know if you can find so
 
 I hope that this package is helpful for persons who work on this topic.
 
-Every report on this code is welcomed at tranquocviet@tdt.edu.vn or viet204@mail.com
+Every report on this code is welcomed at tranquocviet@tdtu.edu.vn or viet204@mail.com
 
 Regards.
