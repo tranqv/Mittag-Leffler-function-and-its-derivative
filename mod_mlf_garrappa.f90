@@ -627,7 +627,7 @@
          zinp = z(1,j)
 !         
          absz = abs( zinp )
-         argz = atan2( aimag(zinp), dble(zinp) ) 
+         argz = atan2( aimag(zinp), real(zinp) ) 
          aagz = abs( argz )
 !
 !        Check parameters and arguments for the three parameter case
