@@ -4,8 +4,7 @@ These files are output from direct computations of Mittag-Leffler (ML) function 
 
 Read the file **TSTRES.txt** for details.
 
-The sums of ML function and its derivative were accumulated directly with more than 1000 significant digits and with 
-a relative error tolerance about 10^(-50).
+The sums of ML function and its derivative were accumulated directly with more than 1000 significant digits and with a relative error tolerance about 10^(-50). This procedure took a very long time but it does not always succeed. For some case, it was failed. This folder only includes cases that it succeeds.
 
 This folder includes more than 70 test cases. For each the test cases, ML function and its derivative are computed on a line in complex plane with a fixed angle, i.e. arg(z) = constant. 
 
