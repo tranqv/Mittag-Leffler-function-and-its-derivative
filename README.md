@@ -30,7 +30,7 @@ Step 2) Running: To run testcase c01 with data reference file **tcases/tt_mlfm_c
  ./tst_main_v02.exe.gfc cas=c01 eep=10
  ./tst_main_v02.exe.gfc cas=c01
 ```
-where cas=**c01** is to select the test case **c01**, and eep=**6** is to perform with error estimate about **10^(-6)**. Details of the reference data files can be seen in _README.txt_ in the folder **tcases/**.
+where cas=**c01** is to select the test case **c01**, and eep=**6** is to perform with error estimate about **10^(-6)**. Details of the reference data files (i.e. all the test cases) can be seen in _README.txt_ in the folder **tcases/**.
 
 The above example was in Linux. It should work in Windows as well.
 
