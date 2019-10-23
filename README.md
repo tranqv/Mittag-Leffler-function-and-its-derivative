@@ -58,10 +58,8 @@ where the symbols 0d, 1d, 2d, and 3d stand for input as scalar (0d), arrays in 1
 
 --------------------------------
 
-Please test this Fortran code by yourself. Please let me know if you can find some regular case that the code is FAILED to produce desired result. 
+Please test this Fortran code by yourself. Let me know if you can find some regular case that the code is FAILED to produce desired result. 
 
-I hope that this package is helpful for persons who work on this topic.
-
-Every report on this code is welcomed at tranquocviet@tdtu.edu.vn or viet204@mail.com
+I hope that this package is helpful for persons who work on this topic. Every report on this code is welcomed at viet204@mail.com
 
 Regards.
