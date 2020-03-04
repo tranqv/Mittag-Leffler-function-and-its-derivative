@@ -25,8 +25,7 @@
 !         Berlin, 1976.
 !         (For a portable gamma function with under/overflow trapping.)
 !
-!  2) Please report on this Fortran code to to tranquocviet@tdt.edu.vn 
-!     or viet204@gmail.com. 
+!  2) Please report on this Fortran code to viet204@gmail.com. 
 !
 !=======================================================================
 !     Version 02, dated Tue May 1 2018 (current version)
