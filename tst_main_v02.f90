@@ -104,7 +104,9 @@
 1000  continue 
 !      
 !     Case cas-th: output from calcualting M-L directly using 
-!     the multi-precision package FM.
+!     the multi-precision package FM of Prof. David M. Smith. 
+!     Link: 
+!        http://dmsmith.lmu.build/
 !     
       inquire ( file='tcases/tt_mlfm_'//cas//'.txt', exist=lg )
 
@@ -133,7 +135,6 @@
       write(*,101)
 
       write(*,302) 'Robert Garrappa method.'
-
 !
 !
       write(*,302) &
@@ -184,7 +185,6 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
 !
 !
 !     Again,
@@ -197,7 +197,6 @@
       'Calc. Mittag-Leffler function: treat input as 1D (array)' 
 
       allocate( zj(1:nr), ej(1:nr), ee(1:nr) )
-
 
       call evaltime ( 0, dt )
 
@@ -248,7 +247,6 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
 
 !  
 !     Derivative of ML function:
@@ -307,12 +305,9 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
-
-
 !
 !
-!     Again,
+!     And again,
 !
       rewind(unit=io)
 !
@@ -370,13 +365,11 @@
             write(*,*) "ERROR: Nothing to be read!"
          endif 
       endif 
-
 !
 !
 !
       write(*,302) &
       'For EXTRA-TESTS, treating input as 2D and 3D, read fort.13'
-
 
       write(13,302) &
          'Suppose that you now are convinced be the latter performance.'
@@ -385,7 +378,6 @@
       write(13,302) &
          'for input given randomly as 0D, 1D, 2D and 3D.'
 
-
       nd1 = 3
       nd2 = 7
       nd3 = 9 
@@ -393,14 +385,12 @@
       allocate ( z2d(nd1,nd2), e2d(nd1,nd2) ) 
       allocate ( z3d(nd1,nd2,nd3), e3d(nd1,nd2,nd3) ) 
 
-
       do j=1,nd2
       do i=1,nd1
          z2d(i,j) = cmplx( i*auxifun_uniran(),&
                            j*auxifun_uniran(), kind=8)
       enddo
       enddo
-
 
       do k=1,nd3 
       do j=1,nd2
@@ -410,8 +400,6 @@
       enddo
       enddo
       enddo
-
-      
 
       write(13,304) '2D: Col1 = z(i,j)', 'Col2 = | e(i,j) - "Eexact" |'
 
@@ -434,10 +422,8 @@
          write(13,*)
       enddo
 
-
       write(13,304) &
          '3D: Col1 = z(i,j,k)', 'Col2 = | e(i,j,k) - "Eexact" |'
-
 
       do k=1,nd3
       do j=1,nd2
@@ -448,8 +434,6 @@
          write(13,*)
       enddo
       enddo
-
-
 !
 !
       close(io)
