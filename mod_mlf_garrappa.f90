@@ -35,17 +35,20 @@
 !        explanation. I'm going to update more testcases.
 !
 !     +  compiler for the test cases: gfortran version 4.9.2, ifort 
-!        version 18.0.0.
+!        version 18.0.0. Later versions should work as well.
 !
 !     +  several comments of the Matlab code are still remained in this
 !        version. Most of them are marked by !@.
 !
 !     +  there are lots of irrelevant comments inside this version. I 
 !        don't have time to clean. So just ignore or clean them by
-!        yourself :D 
+!        yourself :D  (No longer. I did, except this)
 !
 !     +  I have packed everything into only one module to not conflict 
 !        with other package. Now the code is really portable and safe.
+!        But, 
+!
+!     +  You should check the code by yourself. 
 !
 !     +  what's else? ...
 !
@@ -337,7 +340,7 @@
 !
 !     Derivative of Mittag-Leffer function with two parameters. 
 !
-!     Applying THEOREM 4.1 of the Gorenflo's paper
+!     Applying THEOREM 4.1 of the Gorenflo's paper [3]
 !
 !=====
       function mld_garrappa_01 ( afa, bta, z )  result(f)
@@ -600,14 +603,14 @@
 !
       eps      = present_epsilon
 !  
-!     eps      = 1.0e-15_rk   ! the most accurate setting.
-!     eps      = reps * 2     ! value smaller than reps gives errors
-!     eps      = 1.0e-07_rk   ! with a larger values it runs faster.
+!     eps      = 1.0e-15_rk   ! The most accurate setting.
+!     eps      = reps * 2     ! Values that are smaller than reps will give error
+!     eps      = 1.0e-07_rk   ! For larger values of eps, the code runs faster.
 !
       log_eps  = log(eps)  
       epsmul10 = eps * 10 
 !
-!     Other values of t=1 may not working. Hence, let us fix t=1.
+!     Other values of t=1 may not work. Hence, let us fix t=1.
 !
       t = 1.0_rk 
 !
@@ -748,7 +751,7 @@
 !
 !           m = int(afa) + 2
 !
-!     PROOF of m+1 >= klen+2 
+!     PROOF of the inequality m+1 >= klen+2:
 !
 !     For any x in R, we have 
 !
@@ -759,12 +762,12 @@
 !
 !           kmax-kmin <=  afa/2 - x - (-afa/2 - x) = afa < int(afa) + 1
 !
-!     for any afa in R. Note that the inequality afa < int(afa)+1 
+!     holds for any afa in R. Note that the inequality afa < int(afa)+1 
 !     does not allow the equality "=" to be happened. Hence, we have
 !
 !           kmax-kmin < int(afa) + 1
 !
-!     Looking to both the sides, they all are integers. Therefore we 
+!     Looking into both the sides, they all are integers. Therefore we 
 !     conclude that
 !
 !           kmax-kmin <= int(afa)   holds for any afa in R.
@@ -854,7 +857,7 @@
 !
 !@Strength of the singularities ...
 !
-!     Now the efficient length of phi_s_star = len_s_star+2, because 
+!     Now the effective length of phi_s_star = len_s_star+2, because 
 !        phi_s_star = [ 0, phi_s_star, +Inf] ;
 !
       p(1) = max( 0.0_rk, -2*(afa*gma-bta+1) )
@@ -1077,7 +1080,7 @@
 ! 
 !     ichoose returns an integer ramdomly in the set 
 !     of integers {left,left+1,...,right}
-!     (Make sure that we initialized the RNG already, in DRIVERs)
+!     (Make sure that we have initialized the RNG in advance)
 !      
       ichoose = left + int(real(right-left+1)*auxifun_uniran())
 !      
@@ -1233,8 +1236,10 @@
 !           Argonne National Laboratory
 !           Argonne, IL 60439
 !
-!  Modified by Tran Quoc Viet, tranquocviet@tdt.edu.vn
+!  Modified by Tran Quoc Viet, viet204@gmail.com
 !              Sat Apr 28 17:13:38 +07 2018
+!  Hey. We actually have an intrinsic gamma function in Fortran 
+!  (for version >= 90). But I like some portable thing.
 !
 !----------------------------------------------------------------------
 !
@@ -1790,7 +1795,7 @@
 !
 !           +  Calculating k0 from k1, for computing (39):
 !
-!Hint:      You may want to edit something right here to estimate 
+!Hint:      You may want to edit something right below here to estimate 
 !           the truncation errors by the relative error estimate, 
 !           instead of the absolute error estimate. Check, plz!
 !
