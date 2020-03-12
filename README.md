@@ -14,6 +14,8 @@ The package includes
 
 + **tst_main_v02.sh** is the bash (Linux) script that supports users to compile the package.
 
++ **tcases** includes more than 70 test caces in which the Mittag-Leffler function and its derivative are calculated directly by adopting the high precision package FM of Prof. David M. Smith (link: http://dmsmith.lmu.build/)
+
 where **v02** marks the current version, i.e. **version 02**. Older stuffs are moved to folder **obsolete/**
 
 If the script **tst_main_v02.sh** makes you to be confused, read inside the files **mod_mlf_garrappa.f90** and **tst_main_v02.f90** to know how to compile. It is very simple. Here is an example with gfortran compiler (version 4.9.2)
