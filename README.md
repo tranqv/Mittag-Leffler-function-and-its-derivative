@@ -40,28 +40,28 @@ Furthermore, to calculate the generalized Mittag-Leffler function for three para
 ```
  ./tst_main_v02.exe.gfc afa=0.75  bta=1.0 gma=1.2  z='( -10.0, 1.0 )'
 ```
-wherein _alpha = 0.75_, _beta = 1.0_, _gamma = 1.2_ and _z = -10 + i_. Make sure that there is no white-space around the character "=", as above. Then it should give the output:
+wherein _alpha = 0.75_, _beta = 1.0_, _gamma = 1.2_ and _z = -10 + i_. Make sure that there is no white-space around the character "=", as above. Then the outcome should be as follows
 ```
 alpha = 7.5000000E-01, beta = 1.0000000E+00, gamma = 1.2000000E+00
   z  = (-1.00000000000000000E+01, 1.00000000000000000E+00),
 E(z) = ( 8.72265651199321222E-03, 1.30548998870915031E-03),  time =  2.00000E-04 (s) (sec)
 ```
-where _E(z)_ is the output value of the Mittag-Lefflerfunction.
+where _E(z)_ is the numerical value of the Mittag-Leffler function.
 
 --------------------------------
-Common syntax as adopting the code with a Fortran program:
+Common syntax:
 ```
   e0d = genmlf ( afa, bta, gma, z0d )
   e1d = genmlf ( afa, bta, gma, z1d )
   e2d = genmlf ( afa, bta, gma, z2d )
   e3d = genmlf ( afa, bta, gma, z3d )
 ```
-where the symbols 0d, 1d, 2d, and 3d stand for input as scalar (0d), arrays in 1d, 2d, 3d, respectively. Read **tst_main_v02.f90** for details. (There are lots of examples for input as scalar or array with various dimensions.)
+where the symbols 0d, 1d, 2d, and 3d stand for input when it given as scalar (0d), or arrays in 1d, 2d, 3d, respectively. Read **tst_main_v02.f90** for details. (There are lots of examples for input as scalar or array with various dimensions.)
 
 --------------------------------
 
-Please test this Fortran code by yourself. Let me know if you can find some regular case that the code is FAILED to produce desired result. 
+Check and run the code by yourself. Please let me know if you can find some regular case that the code is FAILED to produce desired result.
 
-I hope that this package is helpful for persons who work on this topic. Every report on this code is welcomed at viet204@mail.com
+I hope that this package is helpful for persons who work on this topic. Reports on this code are welcomed at viet204@mail.com
 
 Regards.
