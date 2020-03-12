@@ -372,7 +372,7 @@
       'For EXTRA-TESTS, treating input as 2D and 3D, read fort.13'
 
       write(13,302) &
-         'Suppose that you now are convinced be the latter performance.'
+         'Suppose that you now are convinced by the latter performance.'
       write(13,302) &
          'We shall check the consistency of numerical results '
       write(13,302) &
@@ -544,6 +544,7 @@
 !
 !     This part is copied from the module, since I do not export it out
 !     to public domain. 
+!     (A tiny and portable RNG. We should replace it by some better one)
 !
 !=====
 !
