@@ -59,8 +59,4 @@ where the symbols 0d, 1d, 2d, and 3d stand for input when it given as scalar (0d
 
 --------------------------------
 
-Check and run the code by yourself. Please let me know if you can find some regular case that the code is FAILED to produce desired result.
-
-I hope that this package is helpful for persons who work on this topic. Reports on this code are welcomed at viet204@mail.com
-
-Regards.
+Contact: **viet204@mail.com**
