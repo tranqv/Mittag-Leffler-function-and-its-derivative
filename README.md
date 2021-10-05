@@ -2,7 +2,6 @@ This is a Fortran module translated from the Matlab code of Prof. Robert Garrapp
 
 + https://www.mathworks.com/matlabcentral/fileexchange/48154-the-mittag-leffler-function
 
-I would like to thank him for allowing me to reuse his code so that this Fortran module can be made and to be released on public domain. Feel free to use or modify this module. In doing so, please cite references included inside the source code.
 
 --------------------------------
 
