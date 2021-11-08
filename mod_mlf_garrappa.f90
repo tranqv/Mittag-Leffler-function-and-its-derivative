@@ -780,8 +780,8 @@
 !
 !     Or, m+1 >= klen+2 (DONE). 
 !
-!     In this case, the longest workspace phi_s_star should have length
-!     of m+1, while others have that of m, where m = int(afa) + 2. For 
+!     In this case, the longest workspace phi_s_star should have the 
+!     length m+1, while others have m, where m = int(afa) + 2. For 
 !     each input afa, we have the workspaces to works with an array of 
 !     input z(:).
 !
