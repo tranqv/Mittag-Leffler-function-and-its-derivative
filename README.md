@@ -1,4 +1,4 @@
-This is a Fortran module translated from the Matlab code of Prof. Roberto Garrappa:
+A Fortran module translated from the Matlab code of Prof. Roberto Garrappa
 
 + https://www.mathworks.com/matlabcentral/fileexchange/48154-the-mittag-leffler-function
 
