@@ -44,6 +44,5 @@ Please test this Fortran code by yourself. Let me know if you can find some regu
 
 I hope that this package is helpful for those who work on this topic.
 
-Every report on this code is welcomed at the emails tranquocviet@tdt.edu.vn or viet204@mail.com.
-
-Cheers.
+Viet.
+Email: viet204@mail.com
